@@ -1,0 +1,121 @@
+cv:
+  name: Jayden Dongwoo Lee
+  label: Postdoctoral Researcher, Ph.D.
+  email: cin6474@kaist.ac.kr
+  location: Daejeon, Republic of Korea
+  image: prof_pic.jpg
+  summary: >
+    Postdoctoral researcher in Aerospace Engineering at KAIST working on data-driven
+    estimation and control, fault-tolerant flight control, and GPS-denied navigation.
+
+  sections:
+    Education:
+      - institution: Korea Advanced Institute of Science and Technology (KAIST)
+        location: Daejeon, Korea
+        url: https://www.kaist.ac.kr/en/
+        area: Aerospace Engineering
+        studyType: Ph.D.
+        start_date: 2021-09
+        end_date: 2025-08
+        highlights:
+          - "Advisor: Prof. Hyochoong Bang"
+          - "Data-driven modeling, fault-tolerant control, and navigation"
+      - institution: Korea Advanced Institute of Science and Technology (KAIST)
+        location: Daejeon, Korea
+        url: https://www.kaist.ac.kr/en/
+        area: Aerospace Engineering
+        studyType: M.S.
+        start_date: 2019-09
+        end_date: 2021-08
+      - institution: Ulsan National Institute of Science and Technology (UNIST)
+        location: Ulsan, Korea
+        url: https://www.unist.ac.kr/
+        area: Mechanical and Aerospace Engineering
+        studyType: B.S.
+        start_date: 2015-03
+        end_date: 2019-08
+
+    Experience:
+      - company: KAIST, Dept. of Aerospace Engineering
+        position: Postdoctoral Researcher
+        location: Daejeon, Korea
+        start_date: 2025-09
+        summary: Data-driven estimation and control, fault-tolerant flight control, and GNSS-denied navigation.
+      - company: Hanyoung Nux
+        position: Control Engineer
+        location: Korea
+        start_date: 2020-01
+        end_date: 2024-02
+
+    Awards:
+      - title: Best Paper Award
+        awarder: Korea Institute of Military Science and Technology (KIMST)
+        date: 2025-05
+      - title: Excellence Award (Minister of Science and ICT Award), K-Startup Grand Championship
+        awarder: Ministry of SMEs and Startups
+        date: 2024-12
+      - title: Grand Prize (1st place), Defense Technology Startup Competition
+        awarder: Defense Acquisition Program Administration (DAPA)
+        date: 2024-08
+      - title: Grand Paper Award
+        awarder: Institute of Control, Robotics and Systems (ICROS)
+        date: 2024-07
+      - title: Best Paper Award
+        awarder: Society for Aerospace System Engineering (SASE)
+        date: 2024-11
+      - title: Best Paper Award
+        awarder: Korean Society for Aeronautical & Space Sciences (KSAS)
+        date: 2024-05
+      - title: Best Paper Award
+        awarder: 23rd International Conference on Control, Automation and Systems (ICCAS)
+        date: 2023-10
+      - title: Paan Foundation Scholarship & KAIST Jo Jung-Hoon Scholarship
+        awarder: KAIST
+        date: 2025-05
+
+    Patents:
+      - title: Triple-redundant flight control computer system with an integrated voter
+        authors:
+          - Jayden Dongwoo Lee
+          - Jiho Han
+          - Taemin Shim
+          - Hyochoong Bang
+        releaseDate: 2025-01
+      - title: Fault diagnosis via kernel linear independence test in reproducing kernel Hilbert space for aerial vehicles
+        authors:
+          - Jayden Dongwoo Lee
+          - Namsoo Kim
+          - Hyochoong Bang
+        releaseDate: 2024-11
+      - title: Hierarchical weighted voting for triple-redundant sensor systems of multirotors
+        authors:
+          - Jayden Dongwoo Lee
+          - Youngjae Kim
+          - Hyochoong Bang
+        releaseDate: 2024-11
+      - title: Motor fault diagnosis of multirotors via a Koopman-operator-based linear observer
+        authors:
+          - Jayden Dongwoo Lee
+          - Taemin Shim
+          - Hyochoong Bang
+        releaseDate: 2024-09
+      - title: Fault diagnosis of nonlinear systems via a deep-Koopman-operator-based parity space
+        authors:
+          - Jayden Dongwoo Lee
+          - Taemin Shim
+          - Hyochoong Bang
+        releaseDate: 2024-09
+
+    Service:
+      - title: Journal Reviewer
+        summary: IEEE T-AES, IEEE RA-L, Chinese Journal of Aeronautics, IMechE Part G, Nonlinear Dynamics, Complex & Intelligent Systems, Scientific Reports, Robotics and Computer-Integrated Manufacturing, Energy, Actuators.
+      - title: Conference Reviewer
+        summary: ICUAS, AIAA SciTech, American Control Conference (ACC), ICCAS, RITA.
+
+    Skills:
+      - name: Research
+        keywords: SINDy, Koopman operator, Gaussian processes, EKF, factor graph optimization, MPC, adaptive control
+      - name: Domains
+        keywords: Fault diagnosis & fault-tolerant control, eVTOL / UAM, MagNav, GNSS-denied navigation, GNC hardware
+      - name: Tools
+        keywords: Python, C/C++, MATLAB/Simulink, ROS, PX4, HILS
