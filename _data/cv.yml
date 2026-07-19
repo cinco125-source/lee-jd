@@ -1,12 +1,15 @@
 cv:
   name: Jayden Dongwoo Lee
-  label: Postdoctoral Researcher, Ph.D.
+  label: Postdoctoral Researcher (AITA InnoCORE), KAIST
   email: cin6474@kaist.ac.kr
+  url: https://www.lee-jd.com
   location: Daejeon, Republic of Korea
   image: prof_pic.jpg
   summary: >
-    Postdoctoral researcher in Aerospace Engineering at KAIST working on data-driven
-    estimation and control, fault-tolerant flight control, and GPS-denied navigation.
+    Data-driven GNC researcher working across the full life cycle of unmanned aerospace
+    systems — from fault-tolerant control of eVTOL/multirotor platforms to
+    quantum-magnetometer-based navigation for GNSS-denied and defense applications.
+    Ph.D. dissertation awarded the KAIST College of Engineering Best Dissertation Award (2026).
 
   sections:
     Education:
@@ -18,8 +21,9 @@ cv:
         start_date: 2021-09
         end_date: 2025-08
         highlights:
-          - "Advisor: Prof. Hyochoong Bang"
-          - "Data-driven modeling, fault-tolerant control, and navigation"
+          - "Dissertation: <em>Data-Driven Fault Diagnosis and Fault-Tolerant Control for Redundancy of eVTOL Systems</em>"
+          - "KAIST College of Engineering Best Dissertation Award (Feb. 2026)"
+          - "Advisor: Prof. Hyochoong Bang, Flight Dynamics, Guidance and Control Lab · GPA 3.88/4.3"
       - institution: Korea Advanced Institute of Science and Technology (KAIST)
         location: Daejeon, Korea
         url: https://www.kaist.ac.kr/en/
@@ -27,95 +31,91 @@ cv:
         studyType: M.S.
         start_date: 2019-09
         end_date: 2021-08
+        highlights:
+          - "Thesis: <em>Model Reference Adaptive Control Design for Quadrotor UAV Transporting Unknown Payloads</em>"
+          - "Advisor: Prof. Hyochoong Bang · GPA 3.91/4.3"
       - institution: Ulsan National Institute of Science and Technology (UNIST)
         location: Ulsan, Korea
         url: https://www.unist.ac.kr/
         area: Mechanical and Aerospace Engineering
-        studyType: B.S.
+        studyType: B.S., Cum Laude
         start_date: 2015-03
         end_date: 2019-08
+        highlights:
+          - "Thesis: <em>Design of Hybrid Propulsion Multirotor System</em> · Advisor: Prof. Hungsun Son · GPA 3.62/4.3"
 
     Experience:
-      - company: KAIST, Dept. of Aerospace Engineering
+      - company: KAIST — AITA InnoCORE Program, Dept. of Aerospace Engineering
         position: Postdoctoral Researcher
         location: Daejeon, Korea
         start_date: 2025-09
-        summary: Data-driven estimation and control, fault-tolerant flight control, and GNSS-denied navigation.
-      - company: Hanyoung Nux
-        position: Control Engineer
+        summary: "Lead researcher on AI-based fault-tolerant control and quantum-magnetometer-aided navigation (MagNav) for eVTOL and unmanned aerial systems (advisor: Prof. Hyochoong Bang)."
+        highlights:
+          - Mentor graduate and undergraduate students on disturbance-observer design, data-driven system identification, and drone-based aeromagnetic surveys.
+          - Coordinate flight-test campaigns integrating VN-200 INS, ZED-F9P RTK-GPS, and magnetometer payloads for GNSS-denied navigation.
+      - company: AI Research Center, Hanyoung Nux Co., Ltd.
+        position: AI Research Engineer (concurrent with graduate studies)
         location: Korea
-        start_date: 2020-01
+        start_date: 2021-04
         end_date: 2024-02
+        highlights:
+          - Designed industrial temperature-controller algorithms combining classical PID tuning with data-driven adaptation.
+          - Delivered productized control modules for the company's instrument line.
 
-    Awards:
-      - title: Best Paper Award
-        awarder: Korea Institute of Military Science and Technology (KIMST)
-        date: 2025-05
-      - title: Excellence Award (Minister of Science and ICT Award), K-Startup Grand Championship
-        awarder: Ministry of SMEs and Startups
-        date: 2024-12
-      - title: Grand Prize (1st place), Defense Technology Startup Competition
-        awarder: Defense Acquisition Program Administration (DAPA)
-        date: 2024-08
+    Honors and Awards:
+      - title: Best Dissertation Award (CoE PhD Best Dissertation Award)
+        awarder: KAIST College of Engineering
+        year: 2026
       - title: Grand Paper Award
         awarder: Institute of Control, Robotics and Systems (ICROS)
-        date: 2024-07
+        year: 2024
+      - title: 1st Prize (Grand Prize), Defense-Technology-Based Startup Competition
+        awarder: Defense Acquisition Program Administration (DAPA)
+        year: 2024
+      - title: Excellence Prize (Minister of Science and ICT Award), Challenge! K-Startup Grand Finale
+        awarder: Ministry of SMEs and Startups
+        year: 2024
       - title: Best Paper Award
-        awarder: Society for Aerospace System Engineering (SASE)
-        date: 2024-11
+        awarder: Korea Institute of Military Science and Technology (KIMST)
+        year: 2025
+      - title: Best Paper Award (×3)
+        awarder: Society for Aerospace System Engineering (SASE), 2020 / 2024
+        year: 2024
       - title: Best Paper Award
-        awarder: Korean Society for Aeronautical & Space Sciences (KSAS)
-        date: 2024-05
-      - title: Best Paper Award
-        awarder: 23rd International Conference on Control, Automation and Systems (ICCAS)
-        date: 2023-10
-      - title: Paan Foundation Scholarship & KAIST Jo Jung-Hoon Scholarship
-        awarder: KAIST
-        date: 2025-05
+        awarder: Korean Society for Aeronautical and Space Sciences (KSAS)
+        year: 2024
+      - title: Best Paper Award, 23rd ICCAS
+        awarder: Int. Conf. on Control, Automation and Systems, Yeosu
+        year: 2023
+      - title: Paan Foundation Scholarship · Cho Jung-hoon Scholarship · Excellent TA Award
+        awarder: Paan Foundation / KAIST
+        year: 2025
 
     Patents:
       - title: Triple-redundant flight control computer system with an integrated voter
-        authors:
-          - Jayden Dongwoo Lee
-          - Jiho Han
-          - Taemin Shim
-          - Hyochoong Bang
-        releaseDate: 2025-01
-      - title: Fault diagnosis via kernel linear independence test in reproducing kernel Hilbert space for aerial vehicles
-        authors:
-          - Jayden Dongwoo Lee
-          - Namsoo Kim
-          - Hyochoong Bang
-        releaseDate: 2024-11
+        authors: [Jayden Dongwoo Lee, Jiho Han, Taemin Shim, Hyochoong Bang]
+        year: 2025
+      - title: Fault diagnosis via kernel linear independence test in reproducing kernel Hilbert space
+        authors: [Jayden Dongwoo Lee, Namsoo Kim, Hyochoong Bang]
+        year: 2024
       - title: Hierarchical weighted voting for triple-redundant sensor systems of multirotors
-        authors:
-          - Jayden Dongwoo Lee
-          - Youngjae Kim
-          - Hyochoong Bang
-        releaseDate: 2024-11
-      - title: Motor fault diagnosis of multirotors via a Koopman-operator-based linear observer
-        authors:
-          - Jayden Dongwoo Lee
-          - Taemin Shim
-          - Hyochoong Bang
-        releaseDate: 2024-09
-      - title: Fault diagnosis of nonlinear systems via a deep-Koopman-operator-based parity space
-        authors:
-          - Jayden Dongwoo Lee
-          - Taemin Shim
-          - Hyochoong Bang
-        releaseDate: 2024-09
+        authors: [Jayden Dongwoo Lee, Youngjae Kim, Hyochoong Bang]
+        year: 2024
+      - title: Koopman-operator-based linear observer for multirotor motor fault diagnosis
+        authors: [Jayden Dongwoo Lee, Taemin Shim, Hyochoong Bang]
+        year: 2024
+      - title: Deep-Koopman-operator parity-space fault diagnosis for nonlinear systems
+        authors: [Jayden Dongwoo Lee, Taemin Shim, Hyochoong Bang]
+        year: 2024
 
-    Service:
-      - title: Journal Reviewer
-        summary: IEEE T-AES, IEEE RA-L, Chinese Journal of Aeronautics, IMechE Part G, Nonlinear Dynamics, Complex & Intelligent Systems, Scientific Reports, Robotics and Computer-Integrated Manufacturing, Energy, Actuators.
-      - title: Conference Reviewer
-        summary: ICUAS, AIAA SciTech, American Control Conference (ACC), ICCAS, RITA.
-
-    Skills:
-      - name: Research
-        keywords: SINDy, Koopman operator, Gaussian processes, EKF, factor graph optimization, MPC, adaptive control
-      - name: Domains
-        keywords: Fault diagnosis & fault-tolerant control, eVTOL / UAM, MagNav, GNSS-denied navigation, GNC hardware
-      - name: Tools
-        keywords: Python, C/C++, MATLAB/Simulink, ROS, PX4, HILS
+    Technical Skills:
+      - name: Languages
+        keywords: C/C++, Python, MATLAB, Simulink
+      - name: ML / control frameworks
+        keywords: PyTorch, TensorFlow, scikit-learn, CVXPY, CasADi, GPyTorch, PySINDy
+      - name: Flight / embedded
+        keywords: PX4, ArduPilot, LattePanda, Jetson, STM32, Red Pitaya (FPGA-DSP)
+      - name: Navigation & sensors
+        keywords: VectorNav VN-200, u-blox ZED-F9P RTK, OPM magnetometer, FCC design (OrCAD), HILS/PILS
+      - name: Design & simulation
+        keywords: CATIA, SolidWorks, Gazebo, AirSim, X-Plane

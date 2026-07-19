@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Researcher, Ph.D. · <a href='https://www.kaist.ac.kr/en/'>Dept. of Aerospace Engineering, KAIST</a>
+subtitle: Postdoctoral Researcher (AITA InnoCORE), Ph.D. · <a href='https://www.kaist.ac.kr/en/'>Dept. of Aerospace Engineering, KAIST</a>
 
 profile:
   align: right
@@ -28,7 +28,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a postdoctoral researcher in the Department of Aerospace Engineering at **KAIST**, where I completed my Ph.D. under Prof. Hyochoong Bang. My work lives on the seam between **data-driven methods and flight control** — I design the estimators and controllers that keep aircraft flying when something goes wrong, and I care about taking them from theory all the way onto real flight hardware.
+I am a postdoctoral researcher in the **AITA InnoCORE** program, Department of Aerospace Engineering at **KAIST**, where I completed my Ph.D. under Prof. Hyochoong Bang — a dissertation honored with the **KAIST College of Engineering Best Dissertation Award (2026)**. My work lives on the seam between **data-driven methods and flight control** — I design the estimators and controllers that keep aircraft flying when something goes wrong, and I care about taking them from theory all the way onto real flight hardware.
 
 A large part of my research develops **data-driven modeling and control**. Using sparse identification (SINDy), the Koopman operator, and Gaussian-process methods, I learn vehicle dynamics from data and turn them into disturbance observers, model-predictive controllers, and adaptive laws. I apply these tools to **fault detection, diagnosis, and fault-tolerant control** for multirotors, eVTOL, and urban air mobility — systems where losing an actuator mid-flight is not an option.
 
