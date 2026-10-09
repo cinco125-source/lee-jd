@@ -17,7 +17,6 @@ nav_order: 3
   <a href="#dom-conferences" data-tab="dom-conferences">Domestic Conferences <span>22</span></a>
 </div>
 
-{% include bib_search.liquid %}
 
 <div class="publications pub-numbered">
 
