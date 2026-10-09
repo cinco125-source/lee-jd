@@ -4,7 +4,7 @@ title: "Seminar at Sejong University GNC Lab"
 date: 2026-05-28 09:00:00+0900
 permalink: /updates/sejong-seminar-2026/
 categories: updates
-thumbnail: /assets/img/contents/sejong2026.jpg
+thumbnail: /assets/img/contents/sejong2026.jpg?v=2
 related_posts: false
 ---
 
@@ -14,4 +14,4 @@ Few research groups in Korea focus on this area, so it was valuable to meet rese
 
 Thanks to Prof. Hong and the lab members for the warm welcome and the discussion.
 
-<img src="/assets/img/contents/sejong2026.jpg" alt="Seminar at Sejong University GNC Lab" style="display:block;width:100%;max-width:760px;border-radius:6px;margin:1rem auto;">
+<img src="/assets/img/contents/sejong2026.jpg?v=2" alt="Seminar at Sejong University GNC Lab" style="display:block;width:100%;max-width:760px;border-radius:6px;margin:1rem auto;">
