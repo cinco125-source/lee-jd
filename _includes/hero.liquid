@@ -1,9 +1,5 @@
 <section class="lee-hero" aria-label="Introduction">
-  <div class="lee-hero-slides">
-    <div class="lee-hero-slide is-active" style="background-image: url('/assets/img/hero/hero1.jpg'); background-position: 60% 40%;"></div>
-    <div class="lee-hero-slide" style="background-image: url('/assets/img/hero/hero2.jpg'); background-position: 65% 35%;"></div>
-    <div class="lee-hero-slide" style="background-image: url('/assets/img/hero/hero3.jpg'); background-position: 60% 50%;"></div>
-  </div>
+  <video class="lee-hero-video" src="/assets/video/hero_flight.mp4" poster="/assets/img/hero/hero_poster.jpg" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
   <div class="lee-hero-shade"></div>
   <div class="lee-hero-inner">
     <div class="lee-hero-kicker">Welcome! I'm</div>
@@ -15,7 +11,7 @@
       <a class="lee-btn" href="/publications/">Publications</a>
       <a class="lee-btn" href="/assets/pdf/Jayden_Dongwoo_Lee_CV.pdf" download="Jayden_Dongwoo_Lee_CV.pdf">Download CV</a>
     </div>
-    <div class="lee-hero-caption"><span class="lee-hero-count">01 / 03</span> <span class="lee-hero-label">Hoverbike HBK-F001-E</span></div>
+    <div class="lee-hero-caption"><span class="lee-hero-count">&#9679; Live</span> <span class="lee-hero-label">Outdoor flight test, KAIST</span></div>
   </div>
   <a class="lee-hero-down" href="#lee-main" aria-label="Scroll to content">&#8595;</a>
 </section>
@@ -23,8 +19,7 @@
 
 <style>
   .lee-hero { position: relative; width: 100vw; left: 50%; margin-left: -50vw; height: calc(100vh - 59px - 35px); min-height: 520px; margin-top: -32px; margin-bottom: 2.5rem; overflow: hidden; background: #0e1824; color: #fff; }
-  .lee-hero-slide { position: absolute; inset: 0; background-size: cover; opacity: 0; transform: scale(1.06); transition: opacity 1.6s ease, transform 7s ease; }
-  .lee-hero-slide.is-active { opacity: 1; transform: scale(1); }
+  .lee-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 30%; }
   .lee-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,24,36,0.92) 0%, rgba(14,24,36,0.7) 38%, rgba(14,24,36,0.15) 75%), linear-gradient(0deg, rgba(14,24,36,0.6) 0%, rgba(14,24,36,0) 35%); }
   .lee-hero-inner { position: relative; z-index: 2; max-width: 1100px; height: 100%; margin: 0 auto; padding: 0 1.5rem; display: flex; flex-direction: column; justify-content: center; }
   .lee-hero-kicker { font-family: "Inter", sans-serif; font-size: 0.8rem; letter-spacing: 0.25em; text-transform: uppercase; color: #d2b48c; margin-bottom: 0.6rem; }
@@ -41,23 +36,12 @@
   .lee-hero-down { position: absolute; z-index: 2; bottom: 1.3rem; left: 50%; transform: translateX(-50%); width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.5); border-radius: 50%; color: #fff !important; text-align: center; line-height: 36px; text-decoration: none !important; animation: leebob 2s ease-in-out infinite; }
   @keyframes leebob { 0%,100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 6px); } }
   @media (max-width: 640px) { .lee-hero-shade { background: rgba(14,24,36,0.72); } .lee-hero-caption { display: none; } }
-  @media (prefers-reduced-motion: reduce) { .lee-hero-slide, .lee-hero-down { transition: none; animation: none; } }
+  @media (prefers-reduced-motion: reduce) { .lee-hero-down { animation: none; } }
 </style>
 
 <script>
   (function () {
-    var slides = document.querySelectorAll(".lee-hero-slide");
-    var labels = ["Hoverbike HBK-F001-E", "Quantum magnetometer navigation flight", "MagNav VTOL test vehicle"];
-    var count = document.querySelector(".lee-hero-count");
-    var label = document.querySelector(".lee-hero-label");
-    var i = 0;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    setInterval(function () {
-      slides[i].classList.remove("is-active");
-      i = (i + 1) % slides.length;
-      slides[i].classList.add("is-active");
-      count.textContent = "0" + (i + 1) + " / 0" + slides.length;
-      label.textContent = labels[i];
-    }, 6000);
+    var v = document.querySelector(".lee-hero-video");
+    if (v && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { v.removeAttribute("autoplay"); v.pause(); }
   })();
 </script>
