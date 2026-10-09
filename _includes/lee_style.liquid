@@ -2,7 +2,7 @@
   /* publication cards */
   .publications ol.bibliography li { padding: 1.1rem 0; border-bottom: 1px solid var(--global-divider-color); }
   .publications ol.bibliography li:last-child { border-bottom: none; }
-  .publications .preview { width: 100%; max-height: 150px; object-fit: contain; background: #fff; padding: 4px; margin-top: 0.4rem; }
+  .publications .preview { width: 100%; max-height: 230px; object-fit: contain; background: #fff; padding: 4px; margin-top: 0.4rem; }
   .publications .title { font-weight: 600; line-height: 1.35; }
   .pub-status { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; color: #9a6b2f; border: 1px solid #d2b48c; border-radius: 4px; padding: 0 6px; margin-top: 0.25rem; }
   .pub-keywords { margin-top: 0.4rem; display: flex; flex-wrap: wrap; gap: 4px; }
@@ -36,4 +36,18 @@
   .photo-row figure { margin: 0; }
   .photo-row img { width: 100%; border-radius: 6px; border: 1px solid var(--global-divider-color); }
   .photo-row figcaption { font-size: 0.8rem; color: var(--global-text-color-light); margin-top: 0.3rem; }
+  /* numbering on the publications page (newest = highest number) */
+  .pub-numbered .title::before { color: var(--global-text-color-light); font-weight: 600; margin-right: 0.35rem; }
+  .pub-numbered .journal-list { counter-reset: jnum {{ include.jn | default: 0 }}; }
+  .pub-numbered .journal-list li { counter-increment: jnum -1; }
+  .pub-numbered .journal-list .title::before { content: "[J" counter(jnum) "]"; }
+  .pub-numbered .conf-list { counter-reset: cnum {{ include.cn | default: 0 }}; }
+  .pub-numbered .conf-list li { counter-increment: cnum -1; }
+  .pub-numbered .conf-list .title::before { content: "[C" counter(cnum) "]"; }
+  .theme-block { grid-template-columns: 340px 1fr; }
+  .pub-jump { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.4rem 0 1rem; }
+  .pub-jump a { padding: 0.4rem 0.9rem; border: 1px solid var(--global-divider-color); border-radius: 999px; font-weight: 600; font-size: 0.9rem; color: var(--global-text-color); text-decoration: none; }
+  .pub-jump a:hover { border-color: #1C2E41; }
+  .pub-jump a span { color: var(--global-text-color-light); font-weight: 500; margin-left: 0.25rem; }
+  .bibliography-section-title { scroll-margin-top: 70px; }
 </style>

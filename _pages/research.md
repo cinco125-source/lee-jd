@@ -43,7 +43,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
 ## Future directions
 
 <div class="theme-block">
-  <img src="/assets/img/publication_preview/lee2026uamfdi.jpg" alt="Sensor and flight control computer integration for UAM">
+  <img src="/assets/img/research/digital_twin.jpg" alt="Hybrid physics-residual digital twin with a virtual moment sensor">
   <div>
     <h3>4 · Digital twin &amp; integrated validation</h3>
     <p>I build digital twins that are updated with flight data, together with <strong>hardware-in-the-loop</strong> test benches and custom <strong>redundant flight control computers</strong>, so that an algorithm can move from simulation to flight with the same software. Platforms range from quadrotors to a full-scale hoverbike.</p>
@@ -51,7 +51,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
 </div>
 
 <div class="theme-block">
-  <img src="/assets/img/publication_preview/jo2026ijcas.jpg" alt="Learning-based scheduler on top of a model-based autopilot">
+  <img src="/assets/img/research/certifiable_ai_fc.jpg" alt="Handling-quality-guaranteed learning-based flight control">
   <div>
     <h3>5 · Certifiable AI flight control</h3>
     <p>Learning-based controllers need to satisfy the same requirements as conventional ones before they can fly in certified aircraft. I study <strong>handling-qualities requirements</strong> (e.g., MIL-STD-1797, ADS-33) as design constraints, <strong>run-time assurance</strong> that switches between AI and classical controllers, and requirement-driven reinforcement learning.</p>
