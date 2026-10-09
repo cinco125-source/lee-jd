@@ -21,14 +21,15 @@ Recognized with the **KAIST Excellent Teaching Assistant Award (2024)**.
 Mentored middle-school students through hands-on aerospace mission projects — from open-ended ideation through engineering analysis to final presentation — across all four cohorts of this competitive K-12 space-science program organized by KAIST and sponsored by Hanwha Aerospace. ([LinkedIn post on the program](https://www.linkedin.com/posts/dongwoo-lee-889864246_sqitbystusyosknrbi-ukuupispacehub-kaist-share-7513283085023752194-b1eW/))
 
 <div class="photo-row">
-  <figure><img src="/assets/img/outreach/space_pebble_ceremony.jpg" alt="Space Pebble program completion ceremony" loading="lazy"><figcaption>Completion ceremony, Hanwha–KAIST Space Pebble program</figcaption></figure>
+  <figure class="stack"><img src="/assets/img/outreach/space_pebble_team1.jpg" alt="Team project: space debris removal using satellite laser" loading="lazy"><img src="/assets/img/outreach/space_pebble_team4.jpg" alt="Team project: the last space station of the solar system" loading="lazy"><figcaption>Final projects of mentored teams: space debris removal using a satellite laser, and the last space station of the solar system</figcaption></figure>
   <figure><img src="/assets/img/outreach/space_pebble_collage.jpg" alt="Space Pebble program activities" loading="lazy"><figcaption>Team mentoring and project sessions at Hanwha Space Hub × KAIST</figcaption></figure>
 </div>
 
 ### Research mentor — MiliTech Challenge · 2021–2024
 Mentored cadet teams of the Korean Science &amp; Technology Reserve Officer corps on aerospace and defense research (reinforcement-learning UAV dogfighting, deep-learning target recognition, loitering-munition design). A mentored team won the **Grand Prize (Minister of National Defense Award)** at the 5th MiliTech Challenge (2024) with a study on data-driven model predictive methods for multirotor drones, and another mentored team received an Encouragement Prize at the 2024 Korea Air Force Academy Future Aerospace Conference (sponsored by Hanwha Aerospace).
 
-<div class="photo-row" style="max-width:460px">
+<div class="photo-row">
+  <figure><img src="/assets/img/outreach/militech_ceremony.jpg" alt="5th MiliTech Challenge award ceremony" loading="lazy"><figcaption>Award ceremony, 5th MiliTech Challenge, KAIST, Dec. 2024 (photo: <a href="https://news.kma.ac.kr/news/articleView.html?idxno=915">Korea Military Academy News</a>)</figcaption></figure>
   <figure><img src="/assets/img/outreach/militech_award.jpg" alt="Grand Prize certificate, 5th MiliTech Challenge" loading="lazy"><figcaption>Grand Prize (Minister of National Defense Award), 5th MiliTech Challenge, 2024</figcaption></figure>
 </div>
 
