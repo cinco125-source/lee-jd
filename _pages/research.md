@@ -43,7 +43,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
 ## Future directions
 
 <div class="theme-block">
-  <img src="/assets/img/outreach/hoverbike.jpg" alt="Full-scale hoverbike test vehicle">
+  <img src="/assets/img/publication_preview/lee2026uamfdi.jpg" alt="Sensor and flight control computer integration for UAM">
   <div>
     <h3>4 · Digital twin &amp; integrated validation</h3>
     <p>I build digital twins that are updated with flight data, together with <strong>hardware-in-the-loop</strong> test benches and custom <strong>redundant flight control computers</strong>, so that an algorithm can move from simulation to flight with the same software. Platforms range from quadrotors to a full-scale hoverbike.</p>
