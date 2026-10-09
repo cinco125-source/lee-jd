@@ -13,7 +13,10 @@
     </div>
   </div>
   <!-- 03 team -->
-  <div class="lee-slide" data-slide="2" style="background-image: url('/assets/img/hero/team.jpg'); background-size: cover; background-position: 62% 60%;"></div>
+  <div class="lee-slide" data-slide="2">
+    <div class="lee-sub is-on" style="background-image: url('/assets/img/hero/defense.jpg'); background-position: 58% 35%;"></div>
+    <div class="lee-sub" style="background-image: url('/assets/img/hero/team.jpg'); background-position: 62% 60%;"></div>
+  </div>
 
   <div class="lee-hero-shade"></div>
   <div class="lee-hero-inner">
@@ -43,6 +46,8 @@
   .lee-hero { position: relative; width: 100vw; left: 50%; margin-left: -50vw; height: calc(100vh - 59px - 35px); min-height: 540px; margin-top: -32px; margin-bottom: 2.5rem; overflow: hidden; background: #0e1824; color: #fff; }
   .lee-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; }
   .lee-slide.is-active { opacity: 1; }
+  .lee-sub { position: absolute; inset: 0; background-size: cover; opacity: 0; transition: opacity 1.2s ease; }
+  .lee-sub.is-on { opacity: 1; }
   .lee-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
   .lee-slide-conf { background: radial-gradient(circle at 75% 40%, #1d3550 0%, #0e1824 70%); }
   .lee-conf-grid { position: absolute; right: 5vw; top: 50%; transform: translateY(-50%); width: min(50vw, 740px); display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -84,7 +89,8 @@
     var count = hero.querySelector(".lee-hero-count");
     var label = hero.querySelector(".lee-hero-label");
     var video = hero.querySelector(".lee-hero-video");
-    var titles = ["Flight experiments", "Conference presentations", "Research team, KAIST"];
+    var titles = ["Flight experiments", "Conference presentations", "Ph.D. defense, KAIST"];
+    var subs = hero.querySelectorAll(".lee-sub"), subTitles = ["Ph.D. defense, KAIST", "Research team, KAIST"], subTimer = null, subIdx = 0;
     var clipCuts = [8.6, 16.8];
     var clipLabels = ["Flight experiments · eVTOL actuator fault detection", "Flight experiments · magnetic-anomaly navigation", "Flight experiments · eVTOL fault-tolerant control"];
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -97,7 +103,15 @@
       count.textContent = "0" + (k + 1) + " / 03";
       label.textContent = titles[k];
       hero.classList.toggle("is-last", k === 2);
-      clearTimeout(timer);
+      clearTimeout(timer); clearInterval(subTimer);
+      if (k === 2) {
+        subIdx = 0; subs.forEach(function (x, i) { x.classList.toggle("is-on", i === 0); });
+        if (!reduce) subTimer = setInterval(function () {
+          subIdx = (subIdx + 1) % subs.length;
+          subs.forEach(function (x, i) { x.classList.toggle("is-on", i === subIdx); });
+          label.textContent = subTitles[subIdx];
+        }, 5000);
+      }
       if (k === 0) {
         video.currentTime = 0;
         if (!reduce) { var p = video.play(); if (p && p.catch) p.catch(function () {}); }
