@@ -9,7 +9,6 @@
       <figure><img src="/assets/img/hero/conf1.jpg" alt="ION Pacific PNT 2026, Honolulu" loading="lazy"><figcaption>ION Pacific PNT 2026 · Honolulu</figcaption></figure>
       <figure><img src="/assets/img/hero/conf2.jpg" alt="IFAC World Congress 2026, Busan" loading="lazy"><figcaption>IFAC World Congress 2026 · Busan</figcaption></figure>
       <figure><img src="/assets/img/hero/conf3.jpg" alt="ICROS 2026 poster" loading="lazy"><figcaption>ICROS 2026</figcaption></figure>
-      <figure><img src="/assets/img/hero/conf4.jpg" alt="KSAS Space Conference 2026 poster" loading="lazy"><figcaption>KSAS Space Conference 2026</figcaption></figure>
     </div>
   </div>
   <!-- 03 team -->
@@ -51,6 +50,7 @@
   .lee-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
   .lee-slide-conf { background: radial-gradient(circle at 75% 40%, #1d3550 0%, #0e1824 70%); }
   .lee-conf-grid { position: absolute; right: 5vw; top: 50%; transform: translateY(-50%); width: min(50vw, 740px); display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .lee-conf-grid figure:first-child { grid-column: 1 / 3; aspect-ratio: 16 / 8; }
   .lee-conf-grid figure { margin: 0; position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); }
   .lee-conf-grid img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); transition: transform 6s ease; }
   .lee-slide-conf.is-active .lee-conf-grid img { transform: scale(1); }
@@ -91,8 +91,8 @@
     var video = hero.querySelector(".lee-hero-video");
     var titles = ["Flight experiments", "Conference presentations", "Ph.D. defense, KAIST"];
     var subs = hero.querySelectorAll(".lee-sub"), subTitles = ["Ph.D. defense, KAIST", "Research team, KAIST"], subTimer = null, subIdx = 0;
-    var clipCuts = [8.6, 16.8];
-    var clipLabels = ["Flight experiments · eVTOL actuator fault detection", "Flight experiments · magnetic-anomaly navigation", "Flight experiments · eVTOL fault-tolerant control"];
+    var clipCuts = [4.6, 12.8, 21.0];
+    var clipLabels = ["Flight experiments · hoverbike flight test", "Flight experiments · eVTOL actuator fault detection", "Flight experiments · magnetic-anomaly navigation", "Flight experiments · eVTOL fault-tolerant control"];
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var cur = 0, timer = null;
 
@@ -124,7 +124,7 @@
     video.addEventListener("timeupdate", function () {
       if (cur !== 0) return;
       var t = video.currentTime;
-      label.textContent = clipLabels[t < clipCuts[0] ? 0 : (t < clipCuts[1] ? 1 : 2)];
+      var k = 0; while (k < clipCuts.length && t >= clipCuts[k]) k++; label.textContent = clipLabels[k];
     });
     video.addEventListener("ended", function () { if (cur === 0) show(1); });
     dots.forEach(function (d) { d.addEventListener("click", function () { show(+d.dataset.go); }); });
