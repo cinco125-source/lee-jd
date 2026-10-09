@@ -12,7 +12,7 @@ nav_order: 4
 - **Grand Paper Award** — Institute of Control, Robotics and Systems (ICROS), 2024
 
 ### Entrepreneurship &amp; innovation
-- **Top Excellence Award** — 2024 Defense-Technology-Based Startup Competition, Defense Acquisition Program Administration (DAPA), team KAIST OAQ
+- **Top Excellence Award** — 2024 Defense-Technology-Based Startup Competition, Defense Acquisition Program Administration (DAPA)
 - **Excellence Prize (team)** — 2024 Challenge! K-Startup Grand Finale, Ministry of SMEs and Startups
 
 ### Best paper awards
