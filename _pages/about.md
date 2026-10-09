@@ -70,3 +70,20 @@ I have published 23 SCI(E) journal articles (including accepted papers), filed 4
     <div class="hl-body"><div class="hl-tag">Space Systems</div><div class="hl-title">Flexible spacecraft attitude control</div><p class="hl-desc">Adaptive prescribed performance control with vibration suppression.</p></div>
   </div>
 </div>
+
+<script>
+  // Research Highlights: play YouTube videos inline instead of leaving the page
+  document.querySelectorAll('.hl-media a[href*="youtube.com/watch"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var id = new URL(a.href).searchParams.get("v");
+      if (!id) return;
+      e.preventDefault();
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+      f.title = a.getAttribute("aria-label") || "Video";
+      f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      f.allowFullscreen = true;
+      a.parentNode.replaceChild(f, a);
+    });
+  });
+</script>
