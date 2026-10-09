@@ -13,7 +13,10 @@
 "Adv. Sci.": {color: "#1C2E41"}
 "Compos. B": {color: "#1C2E41"}
 "Appl. Opt.": {color: "#1C2E41"}
-"JKSAS": {color: "#6b7280"}
-"KIMST": {color: "#6b7280"}
-"IPNT": {color: "#4F7F86"}
-"ICROS": {color: "#6b7280"}
+"JKSAS": {color: "#2f5d8a"}
+"KIMST": {color: "#7a5c3e"}
+"IPNT": {color: "#3d6b4f"}
+"ICROS": {color: "#8a3b3b"}
+"KSAS": {color: "#2f5d8a"}
+"SASE": {color: "#4F7F86"}
+"Space Conf.": {color: "#5b4b8a"}
