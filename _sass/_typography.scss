@@ -156,3 +156,5 @@ h1, h2, h3, h4, h5, h6,
 p, li { line-height: 1.65; }
 .profile .more-info { font-family: inherit; font-size: 0.85rem; line-height: 1.5; }
 .abbr .badge, .abbr .badge a, .abbr .badge div { color: #fff !important; }
+.profile .more-info, .profile .more-info p { font-family: "Inter", -apple-system, "Segoe UI", Arial, sans-serif !important; font-size: 0.85rem; line-height: 1.55; }
+.profile .more-info p { display: block; }

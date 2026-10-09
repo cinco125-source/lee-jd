@@ -1,5 +1,5 @@
 {% comment %} Selected papers in a fixed order (one query per key). {% endcomment %}
-{% assign selected_keys = "lee2026taes,lee2025groundeffect,lee2026uamfdi,lee2024koopmanfdi,lee2024koopman,yoon2025dodeca,kim2026fgouwb" | split: "," %}
+{% assign selected_keys = "lee2026taes,lee2025groundeffect,kim2024gpderiv,kim2026fgouwb,yoon2025dodeca,lee2026uamfdi,lee2024koopmanfdi" | split: "," %}
 <div class="publications">
   {% for k in selected_keys %}
     {% bibliography --group_by none --query @*[key={{ k }}] %}
