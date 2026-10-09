@@ -1,22 +1,11 @@
 <h2 class="service-head">Service</h2>
-<div class="service-grid">
-  <div>
-    <div class="service-label">Reviewer · International Journals</div>
-    <div class="service-chips">
-      <span>IEEE Transactions on Aerospace and Electronic Systems</span><span>IEEE Robotics and Automation Letters</span><span>Chinese Journal of Aeronautics</span><span>Journal of the Franklin Institute</span><span>Nonlinear Dynamics</span><span>Proc. IMechE, Part G: J. Aerospace Engineering</span><span>Robotics and Computer-Integrated Manufacturing</span><span>Knowledge-Based Systems</span><span>Complex &amp; Intelligent Systems</span><span>Scientific Reports</span><span>Energy</span>
-    </div>
-  </div>
-  <div>
-    <div class="service-label">Reviewer · International Conferences</div>
-    <div class="service-chips">
-      <span>IEEE CDC</span><span>ACC</span><span>IFAC World Congress</span><span>AIAA SciTech Forum</span><span>ICUAS</span><span>ICCAS</span><span>UR</span><span>RiTA</span>
-    </div>
-  </div>
+<div class="service">
+  <p><span class="service-label">Reviewer · Journals</span> IEEE TAES · IEEE RA-L · IJCAS · IJASS · Chinese J. Aeronautics · J. Franklin Institute · Nonlinear Dynamics · Proc. IMechE Part G · Robotics and Computer-Integrated Manufacturing · Knowledge-Based Systems · Complex &amp; Intelligent Systems · Scientific Reports · Energy</p>
+  <p><span class="service-label">Reviewer · Conferences</span> IEEE CDC · ACC · ICRA · IROS · IFAC World Congress · AIAA SciTech · ICUAS · ICCAS · APISAT · UR · RiTA</p>
 </div>
 <style>
-  .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2rem; margin: 0.4rem 0 1.6rem; }
-  .service-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--global-text-color-light); margin-bottom: 0.5rem; }
-  .service-chips { display: flex; flex-wrap: wrap; gap: 6px; }
-  .service-chips span { font-size: 0.8rem; padding: 2px 10px; border: 1px solid var(--global-divider-color); border-radius: 999px; }
-  @media (max-width: 700px) { .service-grid { grid-template-columns: 1fr; } }
+  .service { margin: 0.3rem 0 1.6rem; }
+  .service p { margin: 0 0 0.45rem; line-height: 1.6; font-size: 0.92rem; }
+  .service-label { display: inline-block; min-width: 11.5rem; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--global-text-color-light); }
+  @media (max-width: 700px) { .service-label { display: block; min-width: 0; } }
 </style>
