@@ -13,8 +13,8 @@ nav_order: 3
 <div class="pub-jump">
   <a href="#intl-journals" data-tab="intl-journals">International Journals <span>24</span></a>
   <a href="#dom-journals" data-tab="dom-journals">Domestic Journals <span>6</span></a>
-  <a href="#intl-conferences" data-tab="intl-conferences">International Conferences <span>29</span></a>
-  <a href="#dom-conferences" data-tab="dom-conferences">Domestic Conferences <span>22</span></a>
+  <a href="#intl-conferences" data-tab="intl-conferences">International Conferences <span>30</span></a>
+  <a href="#dom-conferences" data-tab="dom-conferences">Domestic Conferences <span>57</span></a>
 </div>
 
 
@@ -36,14 +36,14 @@ nav_order: 3
 
 <div class="pub-tab" id="intl-conferences">
 <h2 class="bibliography-section-title">International Conferences</h2>
-<div class="num-list" style="counter-reset: pubnum 30;" data-prefix="C">
+<div class="num-list" style="counter-reset: pubnum 31;" data-prefix="C">
 {% bibliography --query @inproceedings[scope=international] %}
 </div>
 </div>
 
 <div class="pub-tab" id="dom-conferences">
 <h2 class="bibliography-section-title">Domestic Conferences</h2>
-<div class="num-list" style="counter-reset: pubnum 23;" data-prefix="DC">
+<div class="num-list" style="counter-reset: pubnum 58;" data-prefix="DC">
 {% bibliography --query @inproceedings[scope=domestic] %}
 </div>
 </div>
