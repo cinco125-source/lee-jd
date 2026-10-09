@@ -7,13 +7,13 @@ nav: true
 nav_order: 4
 ---
 
-### Dissertation &amp; top academic honors
-- **Best Dissertation Award (CoE PhD Best Dissertation Award)** — KAIST College of Engineering, 2026 · *the highest doctoral research recognition across all engineering departments at KAIST*
+### Dissertation &amp; academic honors
+- **Outstanding Ph.D. Dissertation Award** — KAIST College of Engineering, 2026
 - **Grand Paper Award** — Institute of Control, Robotics and Systems (ICROS), 2024
 
 ### Entrepreneurship &amp; innovation
-- **1st Prize (Grand Prize)** — 2024 Defense-Technology-Based Startup Competition, Defense Acquisition Program Administration (DAPA)
-- **Excellence Prize (Minister of Science and ICT Award)** — 2024 Challenge! K-Startup Grand Finale, Ministry of SMEs and Startups
+- **Top Excellence Award** — 2024 Defense-Technology-Based Startup Competition, Defense Acquisition Program Administration (DAPA), team KAIST OAQ
+- **Excellence Prize (team)** — 2024 Challenge! K-Startup Grand Finale, Ministry of SMEs and Startups
 
 ### Best paper awards
 - **Best Paper Award** — Korea Institute of Military Science and Technology (KIMST), 2025

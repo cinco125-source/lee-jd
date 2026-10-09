@@ -1,15 +1,15 @@
 cv:
   name: Jayden Dongwoo Lee
   label: Postdoctoral Researcher (AITA InnoCORE), KAIST
-  email: cin6474@kaist.ac.kr
+  email: cinco125@gmail.com
   url: https://www.lee-jd.com
   location: Daejeon, Republic of Korea
   image: prof_pic.jpg
   summary: >
-    Data-driven GNC researcher working across the full life cycle of unmanned aerospace
-    systems — from fault-tolerant control of eVTOL/multirotor platforms to
-    quantum-magnetometer-based navigation for GNSS-denied and defense applications.
-    Ph.D. dissertation awarded the KAIST College of Engineering Best Dissertation Award (2026).
+    GNC researcher working on AI-based guidance and control, fault diagnosis and
+    fault-tolerant control for eVTOL and multirotor platforms, and GNSS-denied navigation
+    with quantum magnetometers. Ph.D. dissertation received the KAIST College of Engineering
+    Outstanding Ph.D. Dissertation Award (2026).
 
   sections:
     Education:
@@ -22,7 +22,7 @@ cv:
         end_date: 2025-08
         highlights:
           - "Dissertation: <em>Data-Driven Fault Diagnosis and Fault-Tolerant Control for Redundancy of eVTOL Systems</em>"
-          - "KAIST College of Engineering Best Dissertation Award (Feb. 2026)"
+          - "KAIST College of Engineering Outstanding Ph.D. Dissertation Award (Feb. 2026)"
           - "Advisor: Prof. Hyochoong Bang, Flight Dynamics, Guidance and Control Lab · GPA 3.88/4.3"
       - institution: Korea Advanced Institute of Science and Technology (KAIST)
         location: Daejeon, Korea
@@ -63,16 +63,16 @@ cv:
           - Delivered productized control modules for the company's instrument line.
 
     Honors and Awards:
-      - title: Best Dissertation Award (CoE PhD Best Dissertation Award)
+      - title: Outstanding Ph.D. Dissertation Award
         awarder: KAIST College of Engineering
         year: 2026
       - title: Grand Paper Award
         awarder: Institute of Control, Robotics and Systems (ICROS)
         year: 2024
-      - title: 1st Prize (Grand Prize), Defense-Technology-Based Startup Competition
+      - title: Top Excellence Award, 2024 Defense-Technology-Based Startup Competition (team KAIST OAQ)
         awarder: Defense Acquisition Program Administration (DAPA)
         year: 2024
-      - title: Excellence Prize (Minister of Science and ICT Award), Challenge! K-Startup Grand Finale
+      - title: Excellence Prize (team), Challenge! K-Startup Grand Finale
         awarder: Ministry of SMEs and Startups
         year: 2024
       - title: Best Paper Award
@@ -92,21 +92,14 @@ cv:
         year: 2025
 
     Patents:
-      - title: Triple-redundant flight control computer system with an integrated voter
-        authors: [Jayden Dongwoo Lee, Jiho Han, Taemin Shim, Hyochoong Bang]
+      - title: "Koopman-operator-based linear observer for multirotor motor fault diagnosis (KR 10-2024-0143755, application published 2025)"
+        year: 2024
+      - title: "Deep-Koopman-operator parity-space fault diagnosis for nonlinear systems (KR 10-2024-0146601, application published 2025)"
+        year: 2024
+      - title: "Flight-vehicle fault diagnosis via kernel linear independence test in RKHS (KR 10-2024-0171982, application published 2025)"
+        year: 2024
+      - title: "Triple-redundant flight control computer with an integrated voter (KR 10-2025-0026443, application published 2025)"
         year: 2025
-      - title: Fault diagnosis via kernel linear independence test in reproducing kernel Hilbert space
-        authors: [Jayden Dongwoo Lee, Namsoo Kim, Hyochoong Bang]
-        year: 2024
-      - title: Hierarchical weighted voting for triple-redundant sensor systems of multirotors
-        authors: [Jayden Dongwoo Lee, Youngjae Kim, Hyochoong Bang]
-        year: 2024
-      - title: Koopman-operator-based linear observer for multirotor motor fault diagnosis
-        authors: [Jayden Dongwoo Lee, Taemin Shim, Hyochoong Bang]
-        year: 2024
-      - title: Deep-Koopman-operator parity-space fault diagnosis for nonlinear systems
-        authors: [Jayden Dongwoo Lee, Taemin Shim, Hyochoong Bang]
-        year: 2024
 
     Technical Skills:
       - name: Languages

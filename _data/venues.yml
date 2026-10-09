@@ -1,9 +1,18 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Badge colors for publication abbreviations (navy = SCI(E) journal, gray = domestic/KCI, teal = conference)
+"IEEE TAES": {color: "#1C2E41"}
+"IEEE Sensors": {color: "#1C2E41"}
+"AST": {color: "#1C2E41"}
+"CEP": {color: "#1C2E41"}
+"JAIS": {color: "#1C2E41"}
+"JIRS": {color: "#1C2E41"}
+"IJCAS": {color: "#1C2E41"}
+"IJASS": {color: "#1C2E41"}
+"IMechE G": {color: "#1C2E41"}
+"IET CTA": {color: "#1C2E41"}
+"Acta Astronaut.": {color: "#1C2E41"}
+"Adv. Sci.": {color: "#1C2E41"}
+"Compos. B": {color: "#1C2E41"}
+"Appl. Opt.": {color: "#1C2E41"}
+"JKSAS": {color: "#6b7280"}
+"KIMST": {color: "#6b7280"}
+"IPNT": {color: "#4F7F86"}
