@@ -21,7 +21,7 @@
   </section>
 
   <!-- 02: talks, one photo at a time -->
-  <section class="lee-sec" id="cover-2">
+  <section class="lee-sec lee-flip" id="cover-2">
     <div class="lee-swap" data-interval="4500">
       <img class="is-on" src="/assets/img/hero/conf1.jpg" alt="Oral presentation at ION Pacific PNT 2026, Honolulu" data-cap="ION Pacific PNT 2026 · Honolulu">
       <img src="/assets/img/hero/conf2.jpg" alt="IFAC World Congress 2026, Busan" data-cap="IFAC World Congress 2026 · Busan" loading="lazy">
@@ -32,7 +32,7 @@
       <div class="lee-kicker"><span>02 / 03</span> Talks</div>
       <h2 class="lee-h2">Sharing the work</h2>
       <p class="lee-tag">Recent presentations on GNSS-denied navigation with quantum magnetometers, data-driven control, and fault-tolerant flight.</p>
-      <div class="lee-cta"><a class="lee-btn" href="/news/">All news</a></div>
+      <div class="lee-cta"><a class="lee-btn" href="/updates/">All updates</a></div>
     </div>
     <div class="lee-cap"><span class="lee-cap-text" data-swap-label>ION Pacific PNT 2026 · Honolulu</span></div>
     <a class="lee-next" href="#cover-3" aria-label="Next">&#8595;</a>
@@ -103,6 +103,14 @@
     .lee-rail, .lee-cap { display: none; }
   }
   @media (prefers-reduced-motion: reduce) { .lee-enter, .lee-next, .lee-live { animation: none; } .lee-swap img { transition: none; transform: none; } }
+  /* mirrored slide: photo left, text right */
+  .lee-flip .lee-swap img { right: auto; left: 0; transform-origin: left center; -webkit-mask-image: linear-gradient(270deg, transparent 0%, #000 28%) !important; mask-image: linear-gradient(270deg, transparent 0%, #000 28%) !important; }
+  .lee-flip .lee-shade { background: linear-gradient(270deg, rgba(14,24,36,0.96) 0%, rgba(14,24,36,0.82) 30%, rgba(14,24,36,0.25) 58%, rgba(14,24,36,0.05) 80%), linear-gradient(0deg, rgba(14,24,36,0.55) 0%, rgba(14,24,36,0) 30%); }
+  .lee-flip .lee-inner { align-items: flex-end; text-align: right; padding: 0 clamp(4rem, 7vw, 7rem) 0 2rem; }
+  .lee-flip .lee-cta { justify-content: flex-end; }
+  .lee-flip .lee-kicker span { margin-right: 0.8rem; }
+  .lee-flip .lee-cap { left: auto; right: clamp(4rem, 7vw, 7rem); }
+  @media (max-width: 900px) { .lee-flip .lee-inner { align-items: flex-start; text-align: left; padding: 0 1.5rem; } .lee-flip .lee-cta { justify-content: flex-start; } }
 </style>
 
 <script>
