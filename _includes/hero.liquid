@@ -42,6 +42,7 @@
 <div id="lee-main"></div>
 
 <style>
+  html, body { overflow-x: hidden; }
   .lee-hero { position: relative; width: 100vw; left: 50%; margin-left: -50vw; height: calc(100vh - 59px - 35px); min-height: 540px; margin-top: -32px; margin-bottom: 2.5rem; overflow: hidden; background: #0e1824; color: #fff; }
   .lee-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; }
   .lee-slide.is-active { opacity: 1; }
@@ -49,7 +50,7 @@
   .lee-sub.is-on { opacity: 1; }
   .lee-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% 40%; }
   .lee-slide-conf { background: radial-gradient(circle at 75% 40%, #1d3550 0%, #0e1824 70%); }
-  .lee-conf-grid { position: absolute; right: 5vw; top: 50%; transform: translateY(-50%); width: min(50vw, 740px); display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .lee-conf-grid { position: absolute; right: 4.5vw; top: 50%; transform: translateY(-50%); width: min(44vw, 720px, calc((100vh - 230px) * 1.25)); display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .lee-conf-grid figure:first-child { grid-column: 1 / 3; aspect-ratio: 16 / 8; }
   .lee-conf-grid figure { margin: 0; position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.45); }
   .lee-conf-grid img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); transition: transform 6s ease; }
@@ -76,6 +77,7 @@
   .lee-hero-count { color: #d2b48c; font-weight: 600; margin-right: 0.6rem; }
   .lee-hero-down { position: absolute; z-index: 3; bottom: 1.3rem; left: 50%; transform: translateX(-50%); width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.5); border-radius: 50%; color: #fff !important; text-align: center; line-height: 36px; text-decoration: none !important; animation: leebob 2s ease-in-out infinite; }
   @keyframes leebob { 0%,100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 6px); } }
+  @media (max-width: 1100px) { .lee-hero-name { font-size: clamp(2.4rem, 5.2vw, 4rem); } .lee-hero-tag { max-width: 26rem; } }
   @media (max-width: 760px) { .lee-hero-shade { background: rgba(14,24,36,0.72); } .lee-hero-caption, .lee-conf-grid { display: none; } .lee-hero-nav { right: 0.6rem; } }
   @media (prefers-reduced-motion: reduce) { .lee-slide, .lee-conf-grid img { transition: none; } .lee-hero-down, .lee-enter { animation: none !important; } }
 </style>
