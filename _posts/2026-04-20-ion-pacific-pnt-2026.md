@@ -12,4 +12,4 @@ I presented *Federated Extended Kalman Filter Integrating Terrain-Referenced and
 
 Co-authors: Minseok Choi, Deok-Young Lee, Daham Kim, Sin Hyuk Yim, Sangkyung Lee, Yoontae Hwang, and Hyochoong Bang.
 
-<img src="/assets/img/contents/ion_pnt2026.jpg?v=2" alt="Oral presentation at ION Pacific PNT 2026, Honolulu" style="display:block;width:100%;max-width:760px;border-radius:6px;margin:1rem auto;">
+<img src="/assets/img/contents/ion_pnt2026.jpg?v=2" alt="Oral presentation at ION Pacific PNT 2026, Honolulu" style="display:block;width:auto;max-width:100%;max-height:72vh;border-radius:6px;margin:1rem auto;">

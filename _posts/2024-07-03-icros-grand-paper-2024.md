@@ -10,4 +10,4 @@ related_posts: false
 
 Our paper *SINDy-based Nonlinear Disturbance Observer Design for Multirotors* received the **Grand Paper Award** at the 39th ICROS Annual Conference (ICROS 2024).
 
-<img src="/assets/img/contents/icros2024.jpg?v=2" alt="Grand Paper Award at ICROS 2024" style="display:block;width:100%;max-width:760px;border-radius:6px;margin:1rem auto;">
+<img src="/assets/img/contents/icros2024.jpg?v=2" alt="Grand Paper Award at ICROS 2024" style="display:block;width:auto;max-width:100%;max-height:72vh;border-radius:6px;margin:1rem auto;">
