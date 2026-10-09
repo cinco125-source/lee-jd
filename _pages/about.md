@@ -62,6 +62,10 @@ I have published 23 SCI(E) journal articles (including accepted papers), filed 4
     <div class="hl-body"><div class="hl-tag">AI-based G&amp;C</div><div class="hl-title">SINDy-based MPC for collision avoidance</div><p class="hl-desc">Model predictive control on a dynamics model identified from flight data.</p></div>
   </div>
   <div class="hl-card">
+    <div class="hl-media"><a href="https://www.youtube.com/watch?v=SKZH87vOsHw" target="_blank" rel="noopener" aria-label="Hoverbike flight test (YouTube)"><img src="https://i.ytimg.com/vi/SKZH87vOsHw/hqdefault.jpg" alt="Hoverbike flight test" loading="lazy"><span class="hl-play"></span></a></div>
+    <div class="hl-body"><div class="hl-tag">System Integration &amp; Flight Test</div><div class="hl-title">Hoverbike GNC integration and auto-landing</div><p class="hl-desc">GNC algorithm and hardware integration on a full-scale hoverbike, with auto-landing flight tests.</p></div>
+  </div>
+  <div class="hl-card">
     <div class="hl-media"><a href="https://www.youtube.com/watch?v=Uc1ALYmaBEE" target="_blank" rel="noopener" aria-label="Attitude control of a flexible spacecraft (YouTube)"><img src="https://i.ytimg.com/vi/Uc1ALYmaBEE/hqdefault.jpg" alt="Attitude control of a flexible spacecraft" loading="lazy"><span class="hl-play"></span></a></div>
     <div class="hl-body"><div class="hl-tag">Space Systems</div><div class="hl-title">Flexible spacecraft attitude control</div><p class="hl-desc">Adaptive prescribed performance control with vibration suppression.</p></div>
   </div>
