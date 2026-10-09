@@ -31,4 +31,9 @@
   .theme-block h3 { margin-top: 0; }
   .theme-papers { font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.4rem; }
   @media (max-width: 640px) { .theme-block { grid-template-columns: 1fr; } }
+  /* photo rows */
+  .photo-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 0.8rem 0 1.6rem; }
+  .photo-row figure { margin: 0; }
+  .photo-row img { width: 100%; border-radius: 6px; border: 1px solid var(--global-divider-color); }
+  .photo-row figcaption { font-size: 0.8rem; color: var(--global-text-color-light); margin-top: 0.3rem; }
 </style>

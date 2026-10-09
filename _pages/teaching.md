@@ -7,6 +7,8 @@ nav: true
 nav_order: 5
 ---
 
+{% include lee_style.liquid %}
+
 ### Teaching assistant — KAIST, Dept. of Aerospace Engineering · 2021–2025
 Recognized with the **KAIST Excellent Teaching Assistant Award (2024)**.
 
@@ -18,5 +20,14 @@ Recognized with the **KAIST Excellent Teaching Assistant Award (2024)**.
 ### Graduate mentor — Hanwha–KAIST Space Pebble Program · 2022–2025
 Mentored middle-school students through hands-on aerospace mission projects — from open-ended ideation through engineering analysis to final presentation — across all four cohorts of this competitive K-12 space-science program organized by KAIST and sponsored by Hanwha Aerospace.
 
+<div class="photo-row">
+  <figure><img src="/assets/img/outreach/space_pebble_ceremony.jpg" alt="Space Pebble program completion ceremony" loading="lazy"><figcaption>Completion ceremony, Hanwha–KAIST Space Pebble program</figcaption></figure>
+  <figure><img src="/assets/img/outreach/space_pebble_stage.jpg" alt="Space Pebble final presentations" loading="lazy"><figcaption>Final team presentations</figcaption></figure>
+</div>
+
 ### Research mentor — MiliTech Challenge · 2021–2024
-Mentored cadet teams of the Korean Science &amp; Technology Reserve Officer corps on aerospace and defense research (reinforcement-learning UAV dogfighting, deep-learning target recognition, loitering-munition design). A mentored team won the **Grand Prize (Minister of National Defense Award)** at the 3rd MiliTech Challenge (2024).
+Mentored cadet teams of the Korean Science &amp; Technology Reserve Officer corps on aerospace and defense research (reinforcement-learning UAV dogfighting, deep-learning target recognition, loitering-munition design). A mentored team won the **Grand Prize (Minister of National Defense Award)** at the 5th MiliTech Challenge (2024), and another mentored team received an Encouragement Prize at the 2024 Korea Air Force Academy Future Aerospace Conference (sponsored by Hanwha Aerospace).
+
+<div class="photo-row" style="max-width:460px">
+  <figure><img src="/assets/img/outreach/militech_award.jpg" alt="Grand Prize certificate, 5th MiliTech Challenge" loading="lazy"><figcaption>Grand Prize (Minister of National Defense Award), 5th MiliTech Challenge, 2024</figcaption></figure>
+</div>
