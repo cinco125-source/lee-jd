@@ -37,13 +37,12 @@
   .photo-row img { width: 100%; border-radius: 6px; border: 1px solid var(--global-divider-color); }
   .photo-row figcaption { font-size: 0.8rem; color: var(--global-text-color-light); margin-top: 0.3rem; }
   /* numbering on the publications page (newest = highest number) */
-  .pub-numbered .title::before { color: var(--global-text-color-light); font-weight: 600; margin-right: 0.35rem; }
-  .pub-numbered .journal-list { counter-reset: jnum {{ include.jn | default: 0 }}; }
-  .pub-numbered .journal-list li { counter-increment: jnum -1; }
-  .pub-numbered .journal-list .title::before { content: "[J" counter(jnum) "]"; }
-  .pub-numbered .conf-list { counter-reset: cnum {{ include.cn | default: 0 }}; }
-  .pub-numbered .conf-list li { counter-increment: cnum -1; }
-  .pub-numbered .conf-list .title::before { content: "[C" counter(cnum) "]"; }
+  .pub-numbered .num-list li { counter-increment: pubnum -1; }
+  .pub-numbered .num-list .title::before { color: var(--global-text-color-light); font-weight: 600; margin-right: 0.35rem; }
+  .pub-numbered .num-list[data-prefix="J"] .title::before { content: "[J" counter(pubnum) "]"; }
+  .pub-numbered .num-list[data-prefix="DJ"] .title::before { content: "[DJ" counter(pubnum) "]"; }
+  .pub-numbered .num-list[data-prefix="C"] .title::before { content: "[C" counter(pubnum) "]"; }
+  .pub-numbered .num-list[data-prefix="DC"] .title::before { content: "[DC" counter(pubnum) "]"; }
   .theme-block { grid-template-columns: 340px 1fr; }
   .pub-jump { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.4rem 0 1rem; }
   .pub-jump a { padding: 0.4rem 0.9rem; border: 1px solid var(--global-divider-color); border-radius: 999px; font-weight: 600; font-size: 0.9rem; color: var(--global-text-color); text-decoration: none; }

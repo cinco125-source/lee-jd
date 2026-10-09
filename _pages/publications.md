@@ -8,25 +8,37 @@ nav_order: 3
 ---
 
 <!-- _pages/publications.md -->
-{% include lee_style.liquid jn=30 cn=52 %}
+{% include lee_style.liquid %}
 
 <div class="pub-jump">
-  <a href="#journal-articles">Journal Articles <span>29</span></a>
-  <a href="#conference-papers">Conference Papers <span>51</span></a>
+  <a href="#intl-journals">International Journals <span>24</span></a>
+  <a href="#dom-journals">Domestic Journals <span>5</span></a>
+  <a href="#intl-conferences">International Conferences <span>29</span></a>
+  <a href="#dom-conferences">Domestic Conferences <span>22</span></a>
 </div>
 
 {% include bib_search.liquid %}
 
 <div class="publications pub-numbered">
 
-<h2 class="bibliography-section-title" id="journal-articles">Journal Articles</h2>
-<div class="journal-list">
-{% bibliography --query @article %}
+<h2 class="bibliography-section-title" id="intl-journals">International Journals</h2>
+<div class="num-list" style="counter-reset: pubnum 25;" data-prefix="J">
+{% bibliography --query @article[scope=international] %}
 </div>
 
-<h2 class="bibliography-section-title" id="conference-papers">Conference Papers</h2>
-<div class="conf-list">
-{% bibliography --query @inproceedings %}
+<h2 class="bibliography-section-title" id="dom-journals">Domestic Journals</h2>
+<div class="num-list" style="counter-reset: pubnum 6;" data-prefix="DJ">
+{% bibliography --query @article[scope=domestic] %}
+</div>
+
+<h2 class="bibliography-section-title" id="intl-conferences">International Conferences</h2>
+<div class="num-list" style="counter-reset: pubnum 30;" data-prefix="C">
+{% bibliography --query @inproceedings[scope=international] %}
+</div>
+
+<h2 class="bibliography-section-title" id="dom-conferences">Domestic Conferences</h2>
+<div class="num-list" style="counter-reset: pubnum 23;" data-prefix="DC">
+{% bibliography --query @inproceedings[scope=domestic] %}
 </div>
 
 </div>
