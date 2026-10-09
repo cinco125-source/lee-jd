@@ -60,4 +60,4 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
 
 Videos of these experiments are on the [home page](/#research-highlights).
 
-For the full record, see my [publications](/publications/) and [CV](/cv/).
+For the full record, see my [publications](/publications/).

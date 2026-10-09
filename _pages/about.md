@@ -40,7 +40,7 @@ I work on guidance, navigation, and control (GNC) for aerial vehicles, with a fo
 
 I validate these methods on hardware, including custom flight control computers, hardware-in-the-loop simulation, and flight tests on multirotor, eVTOL, and fixed-wing platforms. I received my B.S. from UNIST and my M.S. and Ph.D. from KAIST, and during graduate school I also worked as an AI research engineer at Hanyoung Nux (2021–2024).
 
-I have published 23 SCI(E) journal articles (including accepted papers), filed 4 patent applications, and received 10 paper awards. See the [research](/research/) and [publications](/publications/) pages, or my [CV](/cv/). Feel free to [reach out](mailto:cinco125@gmail.com).
+I have published 23 SCI(E) journal articles (including accepted papers), filed 4 patent applications, and received 10 paper awards. See the [research](/research/) and [publications](/publications/) pages. Feel free to [reach out](mailto:cinco125@gmail.com).
 
 ### Research Highlights {#research-highlights}
 
