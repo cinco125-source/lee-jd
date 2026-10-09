@@ -50,8 +50,8 @@ I have published 23 SCI(E) journal articles (including accepted papers), filed 4
     <div class="hl-body"><div class="hl-tag">Fault Diagnosis &amp; FTC</div><div class="hl-title">Data-driven FTC for eVTOL: experiment</div><p class="hl-desc">Data-driven modeling and fault detection with an actuator fault injected in flight.</p></div>
   </div>
   <div class="hl-card">
-    <div class="hl-media"><a href="https://www.youtube.com/watch?v=k--g5ymM74U" target="_blank" rel="noopener" aria-label="Data-driven FTC for eVTOL: simulation (YouTube)"><img src="https://i.ytimg.com/vi/k--g5ymM74U/hqdefault.jpg" alt="Data-driven FTC for eVTOL: simulation" loading="lazy"><span class="hl-play"></span></a></div>
-    <div class="hl-body"><div class="hl-tag">Fault Diagnosis &amp; FTC</div><div class="hl-title">Data-driven FTC for eVTOL: simulation</div><p class="hl-desc">Data-driven FDD and FTC in forward flight, compared with a baseline controller.</p></div>
+    <div class="hl-media"><video src="/assets/video/evtol_ftc_inner_motor.mp4" poster="/assets/img/outreach/evtol_ftc_poster.jpg" controls muted playsinline preload="none"></video></div>
+    <div class="hl-body"><div class="hl-tag">Fault Diagnosis &amp; FTC</div><div class="hl-title">eVTOL fault-tolerant control: flight test</div><p class="hl-desc">Thrust reallocation across eight motors after an inner-motor failure. Also: <a href="/assets/video/evtol_ftc_outer_motor.mp4">outer-motor failure</a>.</p></div>
   </div>
   <div class="hl-card">
     <div class="hl-media"><a href="https://www.youtube.com/watch?v=ayYy44Vw-S8" target="_blank" rel="noopener" aria-label="Fault-tolerant control of a coaxial dodecacopter (YouTube)"><img src="https://i.ytimg.com/vi/ayYy44Vw-S8/hqdefault.jpg" alt="Fault-tolerant control of a coaxial dodecacopter" loading="lazy"><span class="hl-play"></span></a></div>
