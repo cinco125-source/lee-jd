@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Outstanding Ph.D. Dissertation Award"
 date: 2026-02-11 08:00:00-0400
 inline: true
 related_posts: false
