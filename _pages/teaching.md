@@ -22,7 +22,7 @@ Mentored middle-school students through hands-on aerospace mission projects — 
 
 <div class="photo-row">
   <figure><img src="/assets/img/outreach/space_pebble_ceremony.jpg" alt="Space Pebble program completion ceremony" loading="lazy"><figcaption>Completion ceremony, Hanwha–KAIST Space Pebble program</figcaption></figure>
-  <figure><img src="/assets/img/outreach/space_pebble_stage.jpg" alt="Space Pebble final presentations" loading="lazy"><figcaption>Final team presentations</figcaption></figure>
+  <figure><img src="/assets/img/outreach/space_pebble_collage.jpg" alt="Space Pebble program activities" loading="lazy"><figcaption>Team mentoring and project sessions at Hanwha Space Hub × KAIST</figcaption></figure>
 </div>
 
 ### Research mentor — MiliTech Challenge · 2021–2024
