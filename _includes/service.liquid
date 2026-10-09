@@ -1,11 +1,14 @@
 <h2 class="service-head">Service</h2>
 <div class="service">
-  <p><span class="service-label">Reviewer · Journals</span><span>IEEE TAES · IEEE RA-L · IJCAS · IJASS · Chinese J. Aeronautics · J. Franklin Institute · Nonlinear Dynamics · Proc. IMechE Part G · Robotics and Computer-Integrated Manufacturing · Knowledge-Based Systems · Complex &amp; Intelligent Systems · Scientific Reports · Energy</span></p>
-  <p><span class="service-label">Reviewer · Conferences</span><span>IEEE CDC · ACC · ICRA · IROS · IFAC World Congress · AIAA SciTech · ICUAS · ICCAS · APISAT · UR · RiTA</span></p>
+  <div class="service-label">Reviewer · Journals</div>
+  <div class="service-chips"><span>IEEE TAES</span><span>IEEE RA-L</span><span>IJCAS</span><span>IJASS</span><span>Aerospace</span><span>Actuators</span><span>Chinese J. Aeronautics</span><span>J. Franklin Institute</span><span>Nonlinear Dynamics</span><span>Proc. IMechE Part G</span><span>Robotics and Computer-Integrated Manufacturing</span><span>Knowledge-Based Systems</span><span>Complex &amp; Intelligent Systems</span><span>Scientific Reports</span><span>Energy</span></div>
+  <div class="service-label">Reviewer · Conferences</div>
+  <div class="service-chips"><span>IEEE CDC</span><span>ACC</span><span>ICRA</span><span>IROS</span><span>IFAC World Congress</span><span>AIAA SciTech</span><span>ICUAS</span><span>ICCAS</span><span>APISAT</span><span>UR</span><span>RiTA</span></div>
 </div>
 <style>
   .service { margin: 0.3rem 0 1.6rem; }
-  .service p { display: grid; grid-template-columns: 12rem 1fr; gap: 0 0.8rem; margin: 0 0 0.5rem; line-height: 1.6; font-size: 0.92rem; }
-  .service-label { padding-top: 0.15rem; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--global-text-color-light); }
-  @media (max-width: 700px) { .service p { grid-template-columns: 1fr; } }
+  .service-label { font-size: 0.76rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--global-text-color-light); margin: 0.6rem 0 0.4rem; }
+  .service-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .service-chips span { font-size: 0.78rem; padding: 2px 10px; border: 1px solid #1C2E41; border-radius: 999px; color: #1C2E41; }
+  html[data-theme="dark"] .service-chips span { border-color: #9fb3c8; color: #9fb3c8; }
 </style>
