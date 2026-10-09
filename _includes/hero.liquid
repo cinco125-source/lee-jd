@@ -97,10 +97,20 @@
   .lee-rail a { font-family: "Inter", sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,255,255,0.5) !important; text-decoration: none !important; padding: 0.15rem 0.5rem 0.15rem 0; border-right: 2px solid transparent; }
   .lee-rail a.is-active { color: #d2b48c !important; border-right-color: #d2b48c; }
   .lee-rail.is-hidden { opacity: 0; pointer-events: none; }
-  @media (max-width: 900px) {
-    .lee-shade { background: rgba(14,24,36,0.7); }
-    .lee-swap img { width: 100%; object-fit: cover; }
+  /* phones / narrow screens: media on top at its own aspect ratio, text below */
+  @media (max-width: 900px), (max-aspect-ratio: 1/1) {
+    html { scroll-snap-type: none; }
+    .lee-sec { height: auto; min-height: 0; display: flex; flex-direction: column; padding-bottom: 3.2rem; }
+    .lee-bg-video { position: relative; inset: auto; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: right center; flex: none; }
+    .lee-swap { position: relative; width: 100%; aspect-ratio: 4 / 3; flex: none; overflow: hidden; }
+    .lee-swap img, .lee-swap img.wide, .lee-flip .lee-swap img { top: 0; left: 0; right: auto; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transform: none !important; -webkit-mask-image: none !important; mask-image: none !important; }
+    .lee-shade { display: none; }
+    .lee-inner, .lee-flip .lee-inner { height: auto; padding: 1.6rem 1.4rem 0; align-items: flex-start; text-align: left; }
+    .lee-flip .lee-cta { justify-content: flex-start; }
+    .lee-name { font-size: clamp(2.2rem, 10vw, 3.2rem); }
+    .lee-h2 { font-size: clamp(1.9rem, 8.5vw, 2.6rem); }
     .lee-rail, .lee-cap { display: none; }
+    .lee-next { bottom: 0.7rem; }
   }
   @media (prefers-reduced-motion: reduce) { .lee-enter, .lee-next, .lee-live { animation: none; } .lee-swap img { transition: none; transform: none; } }
   /* mirrored slide: photo left, text right */
@@ -110,7 +120,6 @@
   .lee-flip .lee-cta { justify-content: flex-end; }
   .lee-flip .lee-kicker span { margin-right: 0.8rem; }
   .lee-flip .lee-cap { left: auto; right: clamp(4rem, 7vw, 7rem); }
-  @media (max-width: 900px) { .lee-flip .lee-inner { align-items: flex-start; text-align: left; padding: 0 1.5rem; } .lee-flip .lee-cta { justify-content: flex-start; } }
 </style>
 
 <script>
