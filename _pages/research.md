@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /research/
-title: research
+title: Research
 description: Advanced GNC technologies for future air mobility.
 nav: true
 nav_order: 2

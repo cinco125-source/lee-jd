@@ -10,4 +10,4 @@ related_posts: false
 
 I attended the **23rd IFAC World Congress** in Busan, Korea (August 23–28, 2026). It was a good opportunity to follow the latest work in data-driven control and to exchange ideas with researchers from around the world, especially on how these approaches can be applied to aerospace systems.
 
-<img src="/assets/img/contents/ifac2026.jpg" alt="Attending the IFAC World Congress 2026, Busan" style="width:100%;max-width:760px;border-radius:6px;margin:0.8rem 0;">
+<img src="/assets/img/contents/ifac2026.jpg" alt="Attending the IFAC World Congress 2026, Busan" style="display:block;width:100%;max-width:760px;border-radius:6px;margin:1rem auto;">

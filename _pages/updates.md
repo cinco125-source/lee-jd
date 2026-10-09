@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /updates/
-title: updates
+title: Updates
 description: Talks, conferences, awards, and other updates.
 nav: true
 nav_order: 4

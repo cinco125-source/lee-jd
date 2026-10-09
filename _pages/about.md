@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Postdoctoral Researcher, AITA InnoCORE, <a href='https://www.kaist.ac.kr/en/'>Department of Aerospace Engineering, KAIST</a>
 
