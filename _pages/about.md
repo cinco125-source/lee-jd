@@ -38,7 +38,7 @@ I work on guidance, navigation, and control (GNC) for aerial vehicles, with a fo
 - **Fault diagnosis and fault-tolerant control**: detecting and isolating actuator and sensor faults in multirotors, eVTOL, and UAM, and reconfiguring the controller in flight.
 - **GNSS-denied navigation**: factor graph optimization with quantum magnetometers and magnetic-anomaly maps for navigation without satellite signals.
 
-I validate these methods on hardware, including custom flight control computers, hardware-in-the-loop simulation, and flight tests on platforms from quadrotors to a hoverbike. I received my B.S. from UNIST and my M.S. and Ph.D. from KAIST, and during graduate school I also worked as an AI research engineer at Hanyoung Nux (2021–2024).
+I validate these methods on hardware, including custom flight control computers, hardware-in-the-loop simulation, and flight tests on multirotor, eVTOL, and fixed-wing platforms. I received my B.S. from UNIST and my M.S. and Ph.D. from KAIST, and during graduate school I also worked as an AI research engineer at Hanyoung Nux (2021–2024).
 
 I have published 23 SCI(E) journal articles (including accepted papers), filed 4 patent applications, and received 10 paper awards. See the [research](/research/) and [publications](/publications/) pages, or my [CV](/cv/). Feel free to [reach out](mailto:cinco125@gmail.com).
 
@@ -60,10 +60,6 @@ I have published 23 SCI(E) journal articles (including accepted papers), filed 4
   <div class="hl-card">
     <div class="hl-media"><a href="https://www.youtube.com/watch?v=YEb-C0KXalY" target="_blank" rel="noopener" aria-label="SINDy-based MPC for multirotor collision avoidance (YouTube)"><img src="https://i.ytimg.com/vi/YEb-C0KXalY/hqdefault.jpg" alt="SINDy-based MPC for multirotor collision avoidance" loading="lazy"><span class="hl-play"></span></a></div>
     <div class="hl-body"><div class="hl-tag">AI-based G&amp;C</div><div class="hl-title">SINDy-based MPC for collision avoidance</div><p class="hl-desc">Model predictive control on a dynamics model identified from flight data.</p></div>
-  </div>
-  <div class="hl-card">
-    <div class="hl-media"><a href="https://www.youtube.com/watch?v=SKZH87vOsHw" target="_blank" rel="noopener" aria-label="Hoverbike flight test (YouTube)"><img src="https://i.ytimg.com/vi/SKZH87vOsHw/hqdefault.jpg" alt="Hoverbike flight test" loading="lazy"><span class="hl-play"></span></a></div>
-    <div class="hl-body"><div class="hl-tag">System Integration &amp; Flight Test</div><div class="hl-title">Hoverbike GNC integration and auto-landing</div><p class="hl-desc">GNC algorithm and hardware integration on a full-scale hoverbike, with auto-landing flight tests.</p></div>
   </div>
   <div class="hl-card">
     <div class="hl-media"><a href="https://www.youtube.com/watch?v=Uc1ALYmaBEE" target="_blank" rel="noopener" aria-label="Attitude control of a flexible spacecraft (YouTube)"><img src="https://i.ytimg.com/vi/Uc1ALYmaBEE/hqdefault.jpg" alt="Attitude control of a flexible spacecraft" loading="lazy"><span class="hl-play"></span></a></div>

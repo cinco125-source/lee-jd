@@ -46,7 +46,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
   <img src="/assets/img/research/digital_twin.jpg" alt="Hybrid physics-residual digital twin with a virtual moment sensor">
   <div>
     <h3>4 · Digital twin &amp; integrated validation</h3>
-    <p>I build digital twins that are updated with flight data, together with <strong>hardware-in-the-loop</strong> test benches and custom <strong>redundant flight control computers</strong>, so that an algorithm can move from simulation to flight with the same software. Platforms range from quadrotors to a full-scale hoverbike.</p>
+    <p>I build digital twins that are updated with flight data, together with <strong>hardware-in-the-loop</strong> test benches and custom <strong>redundant flight control computers</strong>, so that an algorithm can move from simulation to flight with the same software.</p>
   </div>
 </div>
 
