@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: Journal articles and conference papers, in reverse-chronological order. The first tag on each paper shows the research area.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 <!-- _pages/publications.md -->

@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 description: Teaching, mentoring, and outreach.
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 {% include lee_style.liquid %}

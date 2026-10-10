@@ -4,7 +4,7 @@ permalink: /awards/
 title: Awards
 description: Honors, best-paper awards, and scholarships.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 ### Dissertation &amp; academic honors

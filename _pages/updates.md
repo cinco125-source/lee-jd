@@ -4,7 +4,7 @@ permalink: /updates/
 title: Updates
 description: Talks, conferences, awards, and other updates.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% include lee_style.liquid %}
