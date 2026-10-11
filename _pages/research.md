@@ -15,9 +15,9 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
   <div class="rov-tier">
     <div class="rov-label">I · Fundamentals <span>core GNC problems every aerial vehicle faces</span></div>
     <div class="rov-row rov-3">
-      <a class="rov-box c1" href="#axis-1"><img src="/assets/img/research/ov2_f1.jpg" alt=""><h4>1 · AI-based guidance &amp; control</h4><p>Unmodeled forces in normal flight</p><small>GP regression · SINDy · disturbance observers · MPC</small></a>
-      <a class="rov-box c2" href="#axis-2"><img src="/assets/img/research/ov2_f2.jpg" alt=""><h4>2 · Fault diagnosis &amp; fault-tolerant control</h4><p>Internal faults: actuators and sensors</p><small>Koopman operator · residuals · detect–isolate–reconfigure</small></a>
-      <a class="rov-box c3" href="#axis-3"><img src="/assets/img/research/ov2_f3.jpg" alt=""><h4>3 · GNSS-denied navigation</h4><p>External disruption: GNSS jammed or lost</p><small>Quantum magnetometer · map matching · factor graphs</small></a>
+      <a class="rov-box c1" href="#axis-1"><img src="/assets/img/research/ov3_f1.jpg" alt=""><h4>1 · AI-based guidance &amp; control</h4><p>Unmodeled forces in normal flight</p><small>GP regression · SINDy · disturbance observers · MPC</small></a>
+      <a class="rov-box c2" href="#axis-2"><img src="/assets/img/research/ov3_f2.jpg" alt=""><h4>2 · Fault diagnosis &amp; fault-tolerant control</h4><p>Internal faults: actuators and sensors</p><small>Koopman operator · residuals · detect–isolate–reconfigure</small></a>
+      <a class="rov-box c3" href="#axis-3"><img src="/assets/img/research/ov3_f3.jpg" alt=""><h4>3 · GNSS-denied navigation</h4><p>External disruption: GNSS jammed or lost</p><small>Quantum magnetometer · map matching · factor graphs</small></a>
     </div>
     <div class="rov-base">Custom flight control computers &nbsp;·&nbsp; Real-vehicle flight tests &nbsp;·&nbsp; 13 funded projects</div>
   </div>
@@ -26,7 +26,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
     <div class="rov-label">II · Future directions <span>removing the bottleneck shared by all three</span></div>
     <div class="rov-row rov-2">
       <a class="rov-box c4" href="#axis-4"><img src="/assets/img/research/ov2_d1.jpg" alt=""><h4>4 · Digital twin &amp; integrated validation</h4><p>Repeat fault injection and GNSS loss in the twin</p><small>Virtual moment sensor · physics–residual hybrid twin · HILS</small></a>
-      <a class="rov-box c5" href="#axis-5"><img src="/assets/img/research/ov2_d2.jpg" alt=""><h4>5 · Certifiable AI flight control</h4><p>Learning-based control that meets certification requirements</p><small>Handling qualities · run-time assurance · requirement-driven RL</small></a>
+      <a class="rov-box c5" href="#axis-5"><img src="/assets/img/research/ov3_d2.jpg" alt=""><h4>5 · Certifiable AI flight control</h4><p>Learning-based control that meets certification requirements</p><small>Handling qualities · run-time assurance · requirement-driven RL</small></a>
     </div>
   </div>
   <div class="rov-back">&#8635; Validated results return to flight hardware and certification evidence</div>
