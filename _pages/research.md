@@ -11,9 +11,30 @@ nav_order: 2
 
 My research develops guidance, navigation, and control (GNC) methods that keep aerial vehicles safe under model uncertainty, component faults, and loss of GNSS, and validates them on real flight hardware. It is organized into three fundamental areas and two future directions.
 
+<div class="rov">
+  <div class="rov-tier">
+    <div class="rov-label">I · Fundamentals <span>core GNC problems every aerial vehicle faces</span></div>
+    <div class="rov-row rov-3">
+      <a class="rov-box c1" href="#axis-1"><img src="/assets/img/research/ov_f1.jpg" alt=""><h4>1 · AI-based guidance &amp; control</h4><p>Unmodeled forces in normal flight</p><small>GP regression · SINDy · disturbance observers · MPC</small></a>
+      <a class="rov-box c2" href="#axis-2"><img src="/assets/img/research/ov_f2.jpg" alt=""><h4>2 · Fault diagnosis &amp; fault-tolerant control</h4><p>Internal faults: actuators and sensors</p><small>Koopman operator · residuals · detect–isolate–reconfigure</small></a>
+      <a class="rov-box c3" href="#axis-3"><img src="/assets/img/research/ov_f3.jpg" alt=""><h4>3 · GNSS-denied navigation</h4><p>External disruption: GNSS jammed or lost</p><small>Quantum magnetometer · map matching · factor graphs</small></a>
+    </div>
+    <div class="rov-base">Custom flight control computers &nbsp;·&nbsp; Real-vehicle flight tests &nbsp;·&nbsp; 13 funded projects</div>
+  </div>
+  <div class="rov-arrow"><span>&#8595;</span> The bottleneck: limited flight tests and certification</div>
+  <div class="rov-tier rov-future">
+    <div class="rov-label">II · Future directions <span>removing the bottleneck shared by all three</span></div>
+    <div class="rov-row rov-2">
+      <a class="rov-box c4" href="#axis-4"><img src="/assets/img/research/ov_d1.jpg" alt=""><h4>4 · Digital twin &amp; integrated validation</h4><p>Repeat fault injection and GNSS loss in the twin</p><small>Virtual moment sensor · physics–residual hybrid twin · HILS</small></a>
+      <a class="rov-box c5" href="#axis-5"><img src="/assets/img/research/ov_d2.jpg" alt=""><h4>5 · Certifiable AI flight control</h4><p>Learning-based control that meets certification requirements</p><small>Handling qualities · run-time assurance · requirement-driven RL</small></a>
+    </div>
+  </div>
+  <div class="rov-back">&#8635; Validated results return to flight hardware and certification evidence</div>
+</div>
+
 ## Fundamentals
 
-<div class="theme-block">
+<div class="theme-block" id="axis-1">
   <img src="/assets/img/publication_preview/lee2025groundeffect.jpg" alt="Sparse online GP-based nonlinear dynamic inversion">
   <div>
     <h3>1 · AI-based guidance &amp; control</h3>
@@ -22,7 +43,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
   </div>
 </div>
 
-<div class="theme-block">
+<div class="theme-block" id="axis-2">
   <img src="/assets/img/publication_preview/lee2026taes.jpg" alt="SINDy-based fault detection and diagnosis for eVTOL">
   <div>
     <h3>2 · Fault diagnosis &amp; fault-tolerant control</h3>
@@ -31,7 +52,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
   </div>
 </div>
 
-<div class="theme-block">
+<div class="theme-block" id="axis-3">
   <img src="/assets/img/publication_preview/kim2026fgouwb.jpg" alt="Adaptive sliding window factor graph optimization">
   <div>
     <h3>3 · GNSS-denied navigation</h3>
@@ -42,7 +63,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
 
 ## Future directions
 
-<div class="theme-block">
+<div class="theme-block" id="axis-4">
   <img src="/assets/img/research/digital_twin.jpg" alt="Hybrid physics-residual digital twin with a virtual moment sensor">
   <div>
     <h3>4 · Digital twin &amp; integrated validation</h3>
@@ -50,7 +71,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
   </div>
 </div>
 
-<div class="theme-block">
+<div class="theme-block" id="axis-5">
   <img src="/assets/img/research/certifiable_ai_fc.jpg" alt="Handling-quality-guaranteed learning-based flight control">
   <div>
     <h3>5 · Certifiable AI flight control</h3>

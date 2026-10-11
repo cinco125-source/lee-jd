@@ -97,4 +97,28 @@
   .pcard-meta { font-size: 0.8rem; color: #4F5D75; margin-bottom: 0.3rem; }
   html[data-theme="dark"] .pcard-meta { color: #9fb3c8; }
   .pcard-desc { font-size: 0.85rem; color: var(--global-text-color-light); margin: 0; line-height: 1.45; }
+  .rov { margin: 1.4rem 0 2.4rem; font-family: "Inter", sans-serif; }
+  .rov-tier { border: 1px solid var(--global-divider-color); border-radius: 10px; padding: 0.9rem; background: rgba(14, 24, 36, 0.03); }
+  .rov-future { background: rgba(14, 24, 36, 0.07); }
+  .rov-label { font-weight: 700; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; color: #0e1824; margin: 0 0 0.7rem; }
+  html[data-theme="dark"] .rov-label { color: #e6edf5; }
+  .rov-label span { font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--global-text-color-light); margin-left: 0.4rem; }
+  .rov-row { display: grid; gap: 0.75rem; }
+  .rov-3 { grid-template-columns: repeat(3, 1fr); }
+  .rov-2 { grid-template-columns: repeat(2, 1fr); }
+  .rov-box { display: block; background: var(--global-bg-color); border: 1px solid var(--global-divider-color); border-top: 4px solid var(--rc); border-radius: 8px; overflow: hidden; text-decoration: none !important; color: inherit !important; transition: transform .15s, box-shadow .15s; }
+  .rov-box:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.10); }
+  .rov-box img { width: 100%; aspect-ratio: 5 / 2; object-fit: cover; display: block; }
+  .rov-2 .rov-box img { aspect-ratio: 7 / 2; }
+  .rov-box h4 { font-family: "Inter", sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--rc); margin: 0.6rem 0.75rem 0.15rem; }
+  .rov-box p { font-size: 0.82rem; margin: 0 0.75rem 0.35rem; color: var(--global-text-color); }
+  .rov-box small { display: block; font-size: 0.75rem; color: var(--global-text-color-light); margin: 0 0.75rem 0.7rem; }
+  .c1 { --rc: #6b4fbb; } .c2 { --rc: #e07020; } .c3 { --rc: #2e8b57; } .c4 { --rc: #1f4e8c; } .c5 { --rc: #0f7b8a; }
+  .rov-base { margin-top: 0.7rem; text-align: center; font-size: 0.8rem; font-weight: 600; color: #4F5D75; background: rgba(79, 93, 117, 0.10); border-radius: 6px; padding: 0.45rem; }
+  html[data-theme="dark"] .rov-base { color: #9fb3c8; }
+  .rov-arrow { text-align: center; font-weight: 700; font-size: 0.88rem; color: #0e1824; margin: 0.6rem 0; }
+  html[data-theme="dark"] .rov-arrow { color: #e6edf5; }
+  .rov-arrow span { color: #1f4e8c; font-size: 1.2rem; margin-right: 0.3rem; }
+  .rov-back { text-align: right; font-size: 0.8rem; font-weight: 600; color: #1f4e8c; margin-top: 0.5rem; }
+  @media (max-width: 760px) { .rov-3, .rov-2 { grid-template-columns: 1fr; } .rov-back { text-align: center; } }
 </style>
