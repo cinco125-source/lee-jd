@@ -26,7 +26,7 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
     <div class="rov-label">II · Future directions <span>removing the bottleneck shared by all three</span></div>
     <div class="rov-row rov-2">
       <a class="rov-box c4" href="#axis-4"><img src="/assets/img/research/ov3_d1.jpg" alt=""><h4>4 · Digital twin &amp; integrated validation</h4><p>Repeat fault injection and GNSS loss in the twin</p><small>Virtual moment sensor · physics–residual hybrid twin · HILS</small></a>
-      <a class="rov-box c5" href="#axis-5"><img src="/assets/img/research/ov3_d2.jpg" alt=""><h4>5 · Certifiable AI flight control</h4><p>Learning-based control that meets certification requirements</p><small>Handling qualities · run-time assurance · requirement-driven RL</small></a>
+      <a class="rov-box c5" href="#axis-5"><img src="/assets/img/research/ov4_d2.jpg" alt=""><h4>5 · Certifiable AI flight control</h4><p>Learning-based control that meets certification requirements</p><small>Handling qualities · run-time assurance · requirement-driven RL</small></a>
     </div>
   </div>
   <div class="rov-back">&#8635; Validated results return to flight hardware and certification evidence</div>
