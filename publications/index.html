@@ -103,33 +103,33 @@
   .pcard-meta { font-size: 0.8rem; color: #4F5D75; margin-bottom: 0.3rem; }
   html[data-theme="dark"] .pcard-meta { color: #9fb3c8; }
   .pcard-desc { font-size: 0.85rem; color: var(--global-text-color-light); margin: 0; line-height: 1.45; }
-  .rov { margin: 1.4rem 0 2.4rem; font-family: "Inter", sans-serif; }
-  .rov-tier { border: 1px solid var(--global-divider-color); border-radius: 10px; padding: 0.9rem; background: rgba(14, 24, 36, 0.03); }
-  .rov-future { background: rgba(14, 24, 36, 0.07); }
-  .rov-label { font-weight: 700; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; color: #0e1824; margin: 0 0 0.7rem; }
-  html[data-theme="dark"] .rov-label { color: #e6edf5; }
-  .rov-label span { font-weight: 500; text-transform: none; letter-spacing: 0; color: var(--global-text-color-light); margin-left: 0.4rem; }
-  .rov-row { display: grid; gap: 0.75rem; }
+  .rov { margin: 1.8rem 0 2.6rem; }
+  .rov-tier { border-top: 1px solid var(--global-text-color); padding-top: 0.7rem; }
+  .rov-label { font-family: "Inter", sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--global-text-color); margin-bottom: 1rem; }
+  .rov-label span { font-weight: 400; letter-spacing: 0.02em; text-transform: none; color: var(--global-text-color-light); margin-left: 0.6rem; }
+  .rov-row { display: grid; column-gap: 1.6rem; row-gap: 1.4rem; }
   .rov-3 { grid-template-columns: repeat(3, 1fr); }
   .rov-2 { grid-template-columns: repeat(2, 1fr); }
-  .rov-box { display: block; background: var(--global-bg-color); border: 1px solid var(--global-divider-color); border-top: 4px solid var(--rc); border-radius: 8px; overflow: hidden; text-decoration: none !important; color: inherit !important; transition: transform .15s, box-shadow .15s; }
-  .rov-box:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.10); }
-  .rov-box img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; display: block; background: #fff; border-bottom: 1px solid var(--global-divider-color); }
-  .rov-box h4 { font-family: "Inter", sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--rc); margin: 0.6rem 0.75rem 0.15rem; }
-  .rov-box p { font-size: 0.82rem; margin: 0 0.75rem 0.35rem; color: var(--global-text-color); }
-  .rov-box small { display: block; font-size: 0.75rem; color: var(--global-text-color-light); margin: 0 0.75rem 0.7rem; }
-  .c1 { --rc: #6b4fbb; } .c2 { --rc: #e07020; } .c3 { --rc: #2e8b57; } .c4 { --rc: #1f4e8c; } .c5 { --rc: #0f7b8a; }
-  .rov-base { margin-top: 0.7rem; text-align: center; font-size: 0.8rem; font-weight: 600; color: #4F5D75; background: rgba(79, 93, 117, 0.10); border-radius: 6px; padding: 0.45rem; }
-  html[data-theme="dark"] .rov-base { color: #9fb3c8; }
-  .rov-arrow { text-align: center; font-weight: 700; font-size: 0.88rem; color: #0e1824; margin: 0.6rem 0; }
-  html[data-theme="dark"] .rov-arrow { color: #e6edf5; }
-  .rov-arrow span { color: #1f4e8c; font-size: 1.2rem; margin-right: 0.3rem; }
-  .rov-back { text-align: right; font-size: 0.8rem; font-weight: 600; color: #1f4e8c; margin-top: 0.5rem; }
-  @media (max-width: 760px) { .rov-3, .rov-2 { grid-template-columns: 1fr; } .rov-back { text-align: center; } }
-  .theme-block.axis-text { display: block; border-left: 4px solid var(--rc); padding: 0.2rem 0 0.2rem 1.1rem; scroll-margin-top: 80px; }
-  .theme-block.axis-text h3 { color: var(--rc); }
-  .axis-top { float: right; font-size: 0.75rem; font-weight: 600; color: var(--global-text-color-light) !important; text-decoration: none !important; margin-top: 0.3rem; }
-  .axis-top:hover { color: var(--rc) !important; }
+  .rov-box { display: block; text-decoration: none !important; color: inherit !important; }
+  .rov-box img { width: 100%; aspect-ratio: 3 / 2; object-fit: contain; display: block; background: #fff; transition: opacity .2s; }
+  .rov-box:hover img { opacity: 0.85; }
+  .rov-box h4 { font-family: "Source Serif 4", Georgia, serif; font-size: 1.08rem; font-weight: 600; color: var(--global-text-color); margin: 0.7rem 0 0.2rem; line-height: 1.3; }
+  .rov-box:hover h4 { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  .rov-box p { font-size: 0.86rem; margin: 0 0 0.25rem; color: var(--global-text-color); }
+  .rov-box small { display: block; font-size: 0.78rem; color: var(--global-text-color-light); }
+  .rov-base { margin: 1.3rem 0 0; font-size: 0.8rem; color: var(--global-text-color-light); text-align: center; letter-spacing: 0.02em; }
+  .rov-arrow { text-align: center; font-family: "Source Serif 4", Georgia, serif; font-style: italic; font-size: 0.95rem; color: var(--global-text-color-light); margin: 1.4rem 0 1.4rem; }
+  .rov-arrow span { font-style: normal; margin-right: 0.35rem; }
+  .rov-back { text-align: right; font-family: "Source Serif 4", Georgia, serif; font-style: italic; font-size: 0.9rem; color: var(--global-text-color-light); margin-top: 1.2rem; border-top: 1px solid var(--global-divider-color); padding-top: 0.6rem; }
+  @media (max-width: 760px) { .rov-3, .rov-2 { grid-template-columns: 1fr; } .rov-back { text-align: left; } }
+  .theme-block.axis-text { display: block; position: relative; border-top: 1px solid var(--global-divider-color); padding-top: 1.3rem; margin: 0 0 2rem; scroll-margin-top: 80px; }
+  .axis-text > div { display: grid; grid-template-columns: 230px 1fr; column-gap: 2.2rem; }
+  .axis-text h3 { grid-column: 1; grid-row: 1 / span 3; font-family: "Source Serif 4", Georgia, serif; font-size: 1.25rem; font-weight: 600; line-height: 1.3; color: var(--global-text-color); margin: 0; }
+  .axis-text > div > p, .axis-text .theme-papers { grid-column: 2; }
+  .axis-text > div > p { margin-top: 0; }
+  .axis-top { position: absolute; top: 0.35rem; right: 0; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--global-text-color-light) !important; text-decoration: none !important; }
+  .axis-top:hover { color: var(--global-text-color) !important; }
+  @media (max-width: 760px) { .axis-text > div { grid-template-columns: 1fr; } .axis-text h3 { grid-row: auto; margin-bottom: 0.6rem; } }
 </style> <div class="pub-jump"> <a href="#intl-journals" data-tab="intl-journals">International Journals <span>24</span></a> <a href="#dom-journals" data-tab="dom-journals">Domestic Journals <span>6</span></a> <a href="#intl-conferences" data-tab="intl-conferences">International Conferences <span>30</span></a> <a href="#dom-conferences" data-tab="dom-conferences">Domestic Conferences <span>57</span></a> </div> <div class="publications pub-numbered"> <div class="pub-tab" id="intl-journals"> <h2 class="bibliography-section-title">International Journals</h2> <div class="num-list" style="counter-reset: pubnum 25;" data-prefix="J"> <h2 class="bibliography">2026</h2> <ol class="bibliography"> <li> <div class="row"> <div class="col col-sm-4 abbr"> <abbr class="badge rounded w-100" style="background-color:#1C2E41"> <div>IEEE TAES</div> </abbr> <figure> <picture> <img src="/assets/img/publication_preview/lee2026taes.jpg" class="preview z-depth-1 rounded" width="100%" height="auto" alt="lee2026taes.jpg" data-zoomable="" loading="eager" onerror="this.onerror=null; document.querySelectorAll('.responsive-img-srcset').forEach(function (n) { n.remove(); });"> </picture> </figure> </div> <div id="lee2026taes" class="col-sm-8"> <div class="title">Data-Driven Fault Detection and Diagnosis for eVTOL Systems Using SINDy</div> <div class="author"> Jayden Dongwoo Lee and Hyochoong Bang </div> <div class="periodical"> <em>IEEE Transactions on Aerospace and Electronic Systems</em>, 2026 </div> <span class="pub-status">Early Access</span> <div class="pub-keywords"> <span class="pub-kw pub-kw-axis">Fault Diagnosis &amp; FTC</span> <span class="pub-kw">SINDy</span> <span class="pub-kw">eVTOL</span> </div> <div class="links"> <a href="https://doi.org/10.1109/TAES.2026.3731302" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> <a href="https://youtu.be/pGmESKccsKI" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">lee2026taes</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Data-Driven Fault Detection and Diagnosis for eVTOL Systems Using SINDy}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Lee, Jayden Dongwoo and Bang, Hyochoong}</span><span class="p">,</span>
