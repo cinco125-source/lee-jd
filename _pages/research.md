@@ -19,9 +19,9 @@ My research develops guidance, navigation, and control (GNC) methods that keep a
       <a class="rov-box c2" href="#axis-2"><img src="/assets/img/research/ov3_f2.jpg" alt=""><h4>2 · Fault diagnosis &amp; fault-tolerant control</h4><p>Internal faults: actuators and sensors</p><small>Koopman operator · residuals · detect–isolate–reconfigure</small></a>
       <a class="rov-box c3" href="#axis-3"><img src="/assets/img/research/ov3_f3.jpg" alt=""><h4>3 · GNSS-denied navigation</h4><p>External disruption: GNSS jammed or lost</p><small>Quantum magnetometer · map matching · factor graphs</small></a>
     </div>
-    <div class="rov-base">Custom flight control computers &nbsp;·&nbsp; Real-vehicle flight tests &nbsp;·&nbsp; 13 funded projects</div>
+    <div class="rov-base">Custom flight control computers &nbsp;&nbsp;·&nbsp;&nbsp; Real-vehicle flight tests &nbsp;&nbsp;·&nbsp;&nbsp; 13 funded projects</div>
   </div>
-  <div class="rov-arrow"><span>&#8595;</span> The bottleneck: limited flight tests and certification</div>
+  <div class="rov-arrow"><span>&#8595;</span> The bottleneck: limited flight tests and certification.</div>
   <div class="rov-tier rov-future">
     <div class="rov-label">II · Future directions <span>removing the bottleneck shared by all three</span></div>
     <div class="rov-row rov-2">
