@@ -88,8 +88,8 @@
   .pcard-img.rot { position: relative; }
   .pcard-img.rot img { position: absolute; inset: 0; opacity: 0; transition: opacity 0.9s ease; }
   .pcard-img.rot img.on { opacity: 1; }
-  .pcard-logos { display: flex; gap: 0.45rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.5rem; }
-  .pcard-logos img { height: 32px; width: auto; max-width: 170px; object-fit: contain; background: #fff; padding: 3px 5px; border-radius: 4px; }
+  .pcard-logos { display: flex; gap: 0.45rem; align-items: center; flex-wrap: nowrap; margin-bottom: 0.5rem; }
+  .pcard-logos img { height: 32px; width: auto; max-width: min(170px, calc(50% - 0.25rem)); min-width: 0; object-fit: contain; background: #fff; padding: 3px 5px; border-radius: 4px; }
   .pcard-logos img.sq { height: 42px; padding: 2px; }
   .pcard-body { padding: 0.75rem 0.9rem 0.95rem; }
   .pcard-date { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--global-text-color-light); }
