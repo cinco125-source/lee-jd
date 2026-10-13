@@ -9,28 +9,28 @@ layout: blog-shell
       <a class="blog-back" href="{{ '/blog/' | append: group.id | append: '/' | relative_url }}">{{ group.title }}</a>
       {% if page.korean and language_content.size > 1 %}
         <nav class="blog-language-switch" aria-label="Article language">
-          <a href="?lang=en" lang="en" data-blog-language-choice="en" aria-current="true">English</a>
-          <a href="?lang=ko" lang="ko" data-blog-language-choice="ko">한국어</a>
+          <a href="{{ page.english_url | relative_url }}?lang=en" lang="en" data-blog-language-choice="en"{% unless page.lang == 'ko' %} aria-current="true"{% endunless %}>English</a>
+          <a href="{{ page.korean_url | relative_url }}" lang="ko" data-blog-language-choice="ko"{% if page.lang == 'ko' %} aria-current="true"{% endif %}>한국어</a>
         </nav>
       {% endif %}
     </div>
-    <div data-blog-language="en" lang="en">
-      <h1>{{ page.title }}</h1>
-      <p class="blog-article-description">{{ page.description }}</p>
+    <div data-blog-language="en" lang="en"{% if page.lang == 'ko' %} hidden{% endif %}>
+      <h1>{{ page.english.title | default: page.title }}</h1>
+      <p class="blog-article-description">{{ page.english.description | default: page.description }}</p>
     </div>
     {% if page.korean and language_content.size > 1 %}
-      <div data-blog-language="ko" lang="ko" hidden>
+      <div data-blog-language="ko" lang="ko"{% unless page.lang == 'ko' %} hidden{% endunless %}>
         <h1>{{ page.korean.title }}</h1>
         <p class="blog-article-description">{{ page.korean.description }}</p>
       </div>
     {% endif %}
-    <div class="blog-article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time><span>Jayden Dongwoo Lee</span></div>
+    <div class="blog-article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time><a rel="author" href="{{ '/' | relative_url }}">Jayden Dongwoo Lee</a>{% if page.last_modified_at %}<span>Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: '%B %d, %Y' }}</time></span>{% endif %}</div>
     {% if page.image.path %}<figure class="blog-cover"><img src="{{ page.image.path | relative_url }}" alt="{{ page.image.alt | escape }}"></figure>{% endif %}
   </header>
   {% if page.toc %}<details class="blog-toc" hidden><summary>Contents</summary><ul data-blog-toc-list></ul></details>{% endif %}
   <div class="blog-prose" id="markdown-content">
-    <div data-blog-language="en" lang="en">{{ language_content[0] }}</div>
-    {% if page.korean and language_content.size > 1 %}<div data-blog-language="ko" lang="ko" hidden>{{ language_content[1] }}</div>{% endif %}
+    <div data-blog-language="en" lang="en"{% if page.lang == 'ko' %} hidden{% endif %}>{{ language_content[0] }}</div>
+    {% if page.korean and language_content.size > 1 %}<div data-blog-language="ko" lang="ko"{% unless page.lang == 'ko' %} hidden{% endunless %}>{{ language_content[1] }}</div>{% endif %}
   </div>
   <noscript><style>.blog-article [data-blog-language][hidden] {display: block !important;} .blog-language-switch {display: none;}</style></noscript>
   <footer class="blog-article-footer">

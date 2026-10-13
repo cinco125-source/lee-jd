@@ -9,7 +9,7 @@
     {% include header.liquid %}
     {% if page.layout == 'blog-index' %}
       {% assign selected_group = site.data.blog_groups | where: 'id', page.blog_group | first %}
-      <div class="container mt-5">
+      <div class="blog-shell blog-index-heading mt-5">
         <header class="post-header">
           <h1 class="post-title">{{ selected_group.title | default: 'Blog' }}</h1>
           <p class="post-description">{{ selected_group.description | default: 'Paper reviews, technology, and notes along the way.' }}</p>

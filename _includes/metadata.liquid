@@ -1,0 +1,93 @@
+{% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% assign site_name = site.title %}
+{% if site_name == 'blank' or site_name == empty %}{% assign site_name = author_name %}{% endif %}
+{% assign page_group = site.data.blog_groups | where: 'id', page.blog_group | first %}
+{% assign page_description = page.description | default: page_group.description | default: site.description | strip_html | strip_newlines | strip %}
+{% assign page_url = page.url | replace: 'index.html', '' | absolute_url %}
+{% assign page_language = page.lang | default: site.lang | default: 'en' %}
+{% assign page_image = page.image.path | default: page.og_image | default: site.og_image %}
+{% assign is_article = false %}
+{% if page.layout == 'blog-post' or page.layout == 'post' %}{% assign is_article = true %}{% endif %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% if page.url != '/' and page.title and page.title != 'blank' %}{{ page.title | escape }} | {% endif %}{{ site_name | escape }}</title>
+<meta name="author" content="{{ author_name | escape }}">
+<meta name="description" content="{{ page_description | escape }}">
+<meta name="robots" content="{% if page.noindex or page.url == '/404.html' %}noindex, follow{% else %}index, follow, max-image-preview:large{% endif %}">
+{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification | escape }}">{% endif %}
+{% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification | escape }}">{% endif %}
+{% if site.serve_og_meta %}
+<meta property="og:site_name" content="{{ site_name | escape }}">
+<meta property="og:type" content="{% if is_article %}article{% else %}website{% endif %}">
+<meta property="og:title" content="{{ page.title | default: site_name | escape }}">
+<meta property="og:url" content="{{ page_url }}">
+<meta property="og:description" content="{{ page_description | escape }}">
+<meta property="og:locale" content="{% if page_language == 'ko' %}ko_KR{% else %}en_US{% endif %}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: site_name | escape }}">
+<meta name="twitter:description" content="{{ page_description | escape }}">
+{% if page_image %}
+<meta property="og:image" content="{{ page_image | absolute_url }}">
+<meta name="twitter:image" content="{{ page_image | absolute_url }}">
+{% if page.image.alt %}<meta property="og:image:alt" content="{{ page.image.alt | escape }}"><meta name="twitter:image:alt" content="{{ page.image.alt | escape }}">{% endif %}
+{% endif %}
+{% if is_article %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+<meta property="article:author" content="{{ '/' | absolute_url }}">
+{% endif %}
+{% endif %}
+{% if page.korean_url %}
+<link rel="alternate" hreflang="en" href="{{ page.english_url | absolute_url }}">
+<link rel="alternate" hreflang="ko" href="{{ page.korean_url | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ page.english_url | absolute_url }}">
+{% endif %}
+{% if page.url contains '/blog/' %}<link rel="alternate" type="application/atom+xml" title="{{ author_name | escape }}: Blog" href="{{ '/blog/feed.xml' | absolute_url }}">{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ '/' | absolute_url | append: '#author' | jsonify }},
+      "name": {{ author_name | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "sameAs": [
+        "https://orcid.org/{{ site.data.socials.orcid_id }}",
+        "https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}",
+        "https://github.com/{{ site.data.socials.github_username }}"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ '/' | absolute_url | append: '#website' | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": {{ author_name | jsonify }},
+      "publisher": { "@id": {{ '/' | absolute_url | append: '#author' | jsonify }} }
+    },
+    {
+      "@type": "{% if is_article %}BlogPosting{% elsif page.url == '/' %}ProfilePage{% elsif page.layout == 'blog-index' or page.layout == 'blog-tag' %}CollectionPage{% else %}WebPage{% endif %}",
+      "@id": {{ page_url | append: '#content' | jsonify }},
+      "url": {{ page_url | jsonify }},
+      "headline": {{ page.title | default: site_name | jsonify }},
+      "description": {{ page_description | jsonify }},
+      "inLanguage": {{ page_language | jsonify }},
+      "isPartOf": { "@id": {{ '/' | absolute_url | append: '#website' | jsonify }} },
+      {% if is_article %}
+      "mainEntityOfPage": {{ page_url | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+      "author": { "@id": {{ '/' | absolute_url | append: '#author' | jsonify }} },
+      {% if page_group %}"articleSection": {{ page_group.title | jsonify }},{% endif %}
+      {% if page_image %}"image": [{{ page_image | absolute_url | jsonify }}],{% endif %}
+      {% if page.tags %}"keywords": {{ page.tags | jsonify }},{% endif %}
+      {% if page.citation_urls %}"citation": {{ page.citation_urls | jsonify }},{% endif %}
+      "isAccessibleForFree": true
+      {% else %}
+      "{% if page.url == '/' %}mainEntity{% else %}author{% endif %}": { "@id": {{ '/' | absolute_url | append: '#author' | jsonify }} }
+      {% endif %}
+    }
+  ]
+}
+</script>

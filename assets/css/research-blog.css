@@ -114,3 +114,5 @@ html[data-theme="dark"] .blog-site {--blog-accent: #b0c6dd; --blog-muted: #a4acb
   .blog-prose {font-size: .94rem;}
 }
 .blog-index-shell {padding-top: 0;}
+.blog-index-heading {padding-top: 0; padding-bottom: 0; flex: none;}
+.blog-index-heading > .post-header {grid-column: 2;}

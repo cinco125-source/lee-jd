@@ -70,12 +70,15 @@ above and below, then write the Korean body:
 ```
 
 Publish only this one file. Lists, topic archives, counts, and RSS contain one
-entry. The article's English / 한국어 switch changes the title, summary, body,
-and contents links in place. The rest of the site stays in English.
+entry. The build generates a Korean edition at the article's `/ko/` URL.
+The article's English / 한국어 switch links to these real language URLs.
+Both editions have their own title, description, canonical URL, and reciprocal
+`hreflang` links. No second source file or second list entry is needed.
+The rest of the site stays in English.
 
 Initial reading language follows the browser (Korean for `ko`, English otherwise)
 unless the reader has saved a choice. Explicit `?lang=en` or `?lang=ko` links
-override that preference. The switch remembers manual choices when browser
+override that preference. A `/ko/` URL always starts in Korean. The switch remembers manual choices when browser
 storage is available. A post without Korean stays readable in English. With
 JavaScript disabled, both versions appear sequentially.
 
@@ -83,6 +86,31 @@ For paper reviews, identify the paper, authors and source link first. Distinguis
 the source's findings from your interpretation. Preserve figure attribution.
 
 Blog-specific RSS: `/blog/feed.xml`. The site's existing feed remains available.
+
+## Search metadata
+
+Titles and descriptions populate HTML, Open Graph, and social previews. A post's
+cover image takes precedence over the site-wide image. Article structured data
+uses the real author profile, publication date, group, and language. Both language
+URLs are generated into `/sitemap.xml`; `/robots.txt` permits crawling.
+
+For meaningful article revisions, add `last_modified_at` with an ISO date and
+timezone. This appears on the article, in its structured data, and in the feed.
+Do not change it for builds or cosmetic changes. Optional `citation_urls` lists
+the paper DOI and other sources already cited in the visible article.
+
+For future posts, state the question and main takeaway near the beginning, use
+descriptive section headings, and link to original sources. Keep findings,
+limitations, and personal interpretation distinct. Do not add keyword stuffing,
+invented citations, ratings, or hidden instructions for AI systems.
+
+Google Search Console requires owner verification outside this repository. Add
+the `https://lee-jd.com/` URL-prefix property and copy its HTML-tag verification
+value into `_config.yml` under `google_site_verification`. After deployment,
+verify the property, submit `https://lee-jd.com/sitemap.xml`, and inspect the Blog
+and its English/Korean article URLs. Bing's verification value is supported in
+`bing_site_verification` the same way. Do not store account credentials here.
+Technical readiness does not guarantee indexing, ranking, or AI citations.
 
 ## Migration notes
 

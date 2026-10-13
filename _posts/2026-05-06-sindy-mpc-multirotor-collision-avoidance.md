@@ -13,6 +13,9 @@ lang: en
 description: "A closer look at sparse dynamics identification and model predictive control for multirotor collision avoidance."
 related_posts: false
 toc: true
+citation_urls:
+  - https://doi.org/10.1049/cth2.70049
+  - https://arxiv.org/abs/2412.06388
 korean:
   title: "SINDy + MPC로 멀티로터 충돌 회피하기 : 데이터 기반 모델 식별이 만난 예측 제어"
   description: "SINDy로 식별한 동역학 모델과 MPC를 결합해, 불확실한 멀티로터의 충돌 회피 문제를 푸는 과정을 살펴봅니다."

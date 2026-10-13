@@ -41,6 +41,7 @@
   function languageFromLocation() {
     const explicit = new URL(location.href).searchParams.get('lang');
     if (validLanguage(explicit)) return explicit;
+    if (document.documentElement.lang === 'ko') return 'ko';
     if (location.hash) {
       try {
         const target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
@@ -54,14 +55,9 @@
   showLanguage(languageFromLocation());
   choices.forEach(choice => choice.addEventListener('click', event => {
     if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-    event.preventDefault();
     saved = choice.dataset.blogLanguageChoice;
     try { localStorage.setItem(storageKey, saved); } catch { /* Reading still works without storage. */ }
-    const url = new URL(location.href);
-    url.searchParams.set('lang', saved);
-    url.hash = '';
-    history.pushState(null, '', url);
-    showLanguage(saved);
+    // Follow the real language URL so reloads, sharing and crawlers agree.
   }));
   window.addEventListener('popstate', () => showLanguage(languageFromLocation()));
 })();
