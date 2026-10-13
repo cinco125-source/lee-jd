@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+  <head>
+    {% include head.liquid %}
+    <link rel="stylesheet" href="{{ '/assets/css/research-blog.css' | relative_url | bust_file_cache }}">
+  </head>
+  <body class="fixed-top-nav blog-site">
+    <a class="blog-skip" href="#blog-content">Skip to content</a>
+    {% include header.liquid %}
+    <div class="blog-shell">
+      {% include blog-sidebar.liquid %}
+      <main id="blog-content" tabindex="-1" class="blog-main">
+        {{ content }}
+      </main>
+    </div>
+    {% include footer.liquid %}
+    {% include scripts.liquid %}
+    {% if page.layout == 'blog-post' %}<script src="{{ '/assets/js/blog-language.js' | relative_url | bust_file_cache }}" defer></script>{% endif %}
+  </body>
+</html>

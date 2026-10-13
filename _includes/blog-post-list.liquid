@@ -1,0 +1,22 @@
+<div class="blog-post-list">
+  {% for post in include.posts %}
+    {% assign group = site.data.blog_groups | where: 'id', post.blog_group | first %}
+    <article class="blog-entry">
+      <div class="blog-entry-copy">
+        <p class="blog-entry-meta"><a href="{{ '/blog/' | append: group.id | append: '/' | relative_url }}">{{ group.title }}</a><span aria-hidden="true">·</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time></p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="blog-entry-description">{{ post.description | default: post.excerpt | strip_html | truncate: 155 }}</p>
+        {% if post.tags.size > 0 %}
+          <div class="blog-tags" aria-label="Topics">
+            {% for tag in post.tags limit: 4 %}<a href="{{ tag | slugify | prepend: '/blog/tag/' | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      {% if post.image.path %}
+        <a class="blog-entry-image" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ post.image.path | relative_url }}" alt="" loading="lazy" width="260" height="164"></a>
+      {% endif %}
+    </article>
+  {% else %}
+    <div class="blog-empty"><h2>No posts yet.</h2><p>Future writing in this group will appear here.</p><a href="{{ '/blog/' | relative_url }}">Browse all writing <span aria-hidden="true">→</span></a></div>
+  {% endfor %}
+</div>

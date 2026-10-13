@@ -1,0 +1,19 @@
+{% assign blog_posts = site.posts | where_exp: 'post', 'post.blog_group != nil' %}
+<aside class="blog-sidebar" aria-label="Blog navigation">
+  <div class="blog-sidebar-inner">
+    <nav aria-label="Writing groups" class="blog-group-nav">
+      <p class="blog-nav-label">BROWSE WRITING</p>
+      <a href="{{ '/blog/' | relative_url }}" class="blog-group-link"{% if page.url == '/blog/' %} aria-current="page"{% endif %}>
+        <span>All posts</span><span class="blog-count">{{ blog_posts.size }}</span>
+      </a>
+      {% for group in site.data.blog_groups %}
+        {% assign group_posts = blog_posts | where: 'blog_group', group.id %}
+        {% assign group_url = '/blog/' | append: group.id | append: '/' %}
+        <a href="{{ group_url | relative_url }}" class="blog-group-link"{% if page.url == group_url %} aria-current="page"{% elsif page.blog_group == group.id %} data-active-group="true"{% endif %}>
+          <span>{{ group.title }}</span><span class="blog-count">{{ group_posts.size }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+    <a class="blog-subscribe" href="{{ '/blog/feed.xml' | relative_url }}"><i class="fa-solid fa-rss" aria-hidden="true"></i> Subscribe via RSS</a>
+  </div>
+</aside>

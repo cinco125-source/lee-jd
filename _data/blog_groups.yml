@@ -1,0 +1,16 @@
+- id: paper-reviews
+  title: Paper Reviews
+  english: Paper Reviews
+  description: Key ideas, limitations, and reflections on research papers.
+- id: tech-industry
+  title: Tech & Industry
+  english: Tech & Industry
+  description: Perspectives on aerospace, defense, and emerging technology.
+- id: research-notes
+  title: Research Notes
+  english: Research Notes
+  description: Experiments, implementations, and lessons learned along the way.
+- id: reflections
+  title: Reflections
+  english: Reflections
+  description: Notes on learning, research life, and ideas beyond the lab.

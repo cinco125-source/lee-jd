@@ -1,0 +1,19 @@
+---
+layout: blog-shell
+---
+{% assign blog_posts = site.posts | where_exp: 'post', 'post.blog_group != nil' %}
+{% assign selected_group = site.data.blog_groups | where: 'id', page.blog_group | first %}
+{% if selected_group %}
+  {% assign visible_posts = blog_posts | where: 'blog_group', selected_group.id %}
+{% else %}
+  {% assign visible_posts = blog_posts %}
+{% endif %}
+<header class="blog-intro">
+  <p class="blog-eyebrow">{{ selected_group.english | default: 'RESEARCH · IDEAS · FIELD NOTES' }}</p>
+  <h1>{{ selected_group.title | default: 'Blog' }}</h1>
+  <p>{{ selected_group.description | default: 'Paper reviews, technology, and notes along the way.' }}</p>
+</header>
+<div class="blog-list-region">
+  <div class="blog-list-heading"><span>{{ selected_group.english | default: 'All writing' }}</span><span>{{ visible_posts.size }} posts</span></div>
+  {% include blog-post-list.liquid posts=visible_posts %}
+</div>

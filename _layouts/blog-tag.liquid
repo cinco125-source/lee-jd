@@ -1,0 +1,9 @@
+---
+layout: blog-shell
+---
+{% assign tag_posts = page.documents | where_exp: 'post', 'post.blog_group != nil' %}
+<header class="blog-intro"><p class="blog-eyebrow">TOPIC</p><h1>#{{ page.title }}</h1><p>Writing on this topic across all groups.</p></header>
+<div class="blog-list-region">
+  <div class="blog-list-heading"><span>Topic archive</span><span>{{ tag_posts.size }} posts</span></div>
+  {% include blog-post-list.liquid posts=tag_posts %}
+</div>

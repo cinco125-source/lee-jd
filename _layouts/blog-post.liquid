@@ -1,0 +1,40 @@
+---
+layout: blog-shell
+---
+{% assign group = site.data.blog_groups | where: 'id', page.blog_group | first %}
+{% assign language_content = content | split: '<!-- lang:ko -->' %}
+<article class="blog-article">
+  <header class="blog-article-header">
+    <div class="blog-article-toolbar">
+      <a class="blog-back" href="{{ '/blog/' | append: group.id | append: '/' | relative_url }}">{{ group.title }}</a>
+      {% if page.korean and language_content.size > 1 %}
+        <nav class="blog-language-switch" aria-label="Article language">
+          <a href="?lang=en" lang="en" data-blog-language-choice="en" aria-current="true">English</a>
+          <a href="?lang=ko" lang="ko" data-blog-language-choice="ko">한국어</a>
+        </nav>
+      {% endif %}
+    </div>
+    <div data-blog-language="en" lang="en">
+      <h1>{{ page.title }}</h1>
+      <p class="blog-article-description">{{ page.description }}</p>
+    </div>
+    {% if page.korean and language_content.size > 1 %}
+      <div data-blog-language="ko" lang="ko" hidden>
+        <h1>{{ page.korean.title }}</h1>
+        <p class="blog-article-description">{{ page.korean.description }}</p>
+      </div>
+    {% endif %}
+    <div class="blog-article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time><span>Jayden Dongwoo Lee</span></div>
+    {% if page.image.path %}<figure class="blog-cover"><img src="{{ page.image.path | relative_url }}" alt="{{ page.image.alt | escape }}"></figure>{% endif %}
+  </header>
+  {% if page.toc %}<details class="blog-toc" hidden><summary>Contents</summary><ul data-blog-toc-list></ul></details>{% endif %}
+  <div class="blog-prose" id="markdown-content">
+    <div data-blog-language="en" lang="en">{{ language_content[0] }}</div>
+    {% if page.korean and language_content.size > 1 %}<div data-blog-language="ko" lang="ko" hidden>{{ language_content[1] }}</div>{% endif %}
+  </div>
+  <noscript><style>.blog-article [data-blog-language][hidden] {display: block !important;} .blog-language-switch {display: none;}</style></noscript>
+  <footer class="blog-article-footer">
+    <div class="blog-tags">{% for tag in page.tags %}<a href="{{ tag | slugify | prepend: '/blog/tag/' | append: '/' | relative_url }}">{{ tag }}</a>{% endfor %}</div>
+    <a href="{{ '/blog/' | append: group.id | append: '/' | relative_url }}">More in {{ group.title }} <span aria-hidden="true">→</span></a>
+  </footer>
+</article>
