@@ -1,0 +1,12 @@
+{%- comment -%}
+  Publication counts computed from _bibliography/papers.bib at build time.
+  Used by the About and Publications pages so nothing is hard-coded.
+{%- endcomment -%}
+{%- capture pc_nj -%}{% bibliography_count --query @article[scope=international] %}{%- endcapture -%}
+{%- capture pc_ndj -%}{% bibliography_count --query @article[scope=domestic] %}{%- endcapture -%}
+{%- capture pc_nc -%}{% bibliography_count --query @inproceedings[scope=international] %}{%- endcapture -%}
+{%- capture pc_ndc -%}{% bibliography_count --query @inproceedings[scope=domestic] %}{%- endcapture -%}
+{%- assign pc_nj = pc_nj | strip | plus: 0 -%}
+{%- assign pc_ndj = pc_ndj | strip | plus: 0 -%}
+{%- assign pc_nc = pc_nc | strip | plus: 0 -%}
+{%- assign pc_ndc = pc_ndc | strip | plus: 0 -%}

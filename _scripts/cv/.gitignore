@@ -1,0 +1,8 @@
+cv.tex
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.xdv
+cv.pdf

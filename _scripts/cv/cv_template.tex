@@ -1,0 +1,169 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,left=1.6cm,right=1.6cm,top=1.4cm,bottom=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage[sfdefault]{roboto}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{0E5484}
+\definecolor{graytext}{HTML}{5D5D5D}
+\definecolor{darktext}{HTML}{333333}
+\color{darktext}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{needspace}
+
+\setlength{\parindent}{0pt}
+\linespread{1.05}
+\titleformat{\section}{\needspace{5\baselineskip}\LARGE\bfseries\color{black}}{}{0em}{}
+\newcommand{\cvsection}[1]{\section*{#1\ \leaders\hrule height 0.8pt\hfill\kern0pt}}
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+\newcommand{\cvsub}[1]{\vspace{4pt}{\large\bfseries #1}\par\vspace{3pt}}
+\setlist[itemize]{leftmargin=1.1em,itemsep=0.5pt,topsep=1pt,label={\small\textbullet}}
+\newlist{pubs}{enumerate}{1}
+\setlist[pubs]{label={[\arabic*]},leftmargin=2.4em,itemsep=2pt,topsep=2pt,font=\color{accent}}
+
+% Awesome-CV style entry: org / location, position / dates
+\newcommand{\cventry}[4]{%
+  {\bfseries #1}\hfill{\color{accent}\itshape #2}\\
+  {\scshape\small\color{graytext} #3}\hfill{\color{graytext}\itshape\small #4}\par\vspace{1pt}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\scshape\small\color{graytext} %%DATE%%}
+\fancyfoot[C]{\scshape\small\color{graytext} Jayden Dongwoo Lee \textperiodcentered{} Curriculum Vitae}
+\fancyfoot[R]{\small\color{graytext}\thepage}
+
+\begin{document}
+
+\begin{center}
+{\fontsize{30}{34}\selectfont {\fontseries{l}\selectfont Jayden Dongwoo} \textbf{Lee}}\\[5pt]
+{\scshape\color{accent} Postdoctoral Researcher, AITA InnoCORE \textperiodcentered{} KAIST}\\[2pt]
+{\itshape\small Department of Aerospace Engineering, KAIST, Daejeon, Republic of Korea}\\[5pt]
+{\footnotesize
+\faEnvelope\ \href{mailto:cinco125@gmail.com}{cinco125@gmail.com} \enspace\textbar\enspace
+\faHome\ \href{https://lee-jd.com}{www.lee-jd.com} \enspace\textbar\enspace
+\faLinkedin\ \href{https://www.linkedin.com/in/dongwoo-lee-889864246}{dongwoo-lee-889864246} \enspace\textbar\enspace
+\faOrcid\ \href{https://orcid.org/0000-0002-6204-0644}{0000-0002-6204-0644} \enspace\textbar\enspace
+\faGraduationCap\ \href{https://scholar.google.com/citations?user=Bo3kxuUAAAAJ}{Google Scholar}}\\[8pt]
+{\itshape\color{graytext} ``Toward reliable and resilient autonomy for aerial vehicles: bridging model-based control, data-driven methods, and GNSS-denied navigation.''}
+\end{center}
+
+\cvsection{Summary}
+A GNC (guidance, navigation, and control) researcher working on aerial vehicles that stay safe under model uncertainty, component faults, and loss of GNSS. My Ph.D. dissertation on data-driven fault diagnosis and fault-tolerant control for eVTOL received the \textbf{KAIST College of Engineering Outstanding Ph.D. Dissertation Award} (Feb. 2026). I am currently a postdoctoral researcher in the AITA InnoCORE program at KAIST with Prof. Hyochoong Bang. My work combines (i) model-based control (Lyapunov, SMC, MPC, MRAC), (ii) data-driven methods (Gaussian processes, Koopman operator, SINDy, reinforcement learning), and (iii) hardware-in-the-loop and flight-test validation.
+
+\cvsub{Field of Interest}
+\begin{itemize}
+\item \textbf{AI-based guidance and control}: Gaussian processes, SINDy, and reinforcement learning for adaptive, incremental, and model-predictive control.
+\item \textbf{Fault diagnosis and fault-tolerant control}: data-driven FDD and control allocation for multirotors, eVTOL, and UAM.
+\item \textbf{GNSS-denied navigation}: factor graph optimization with INS, UWB, terrain, and quantum magnetometer measurements.
+\item \textbf{Future directions}: digital twins and integrated validation; certifiable AI flight control (handling-qualities requirements, run-time assurance).
+\end{itemize}
+
+\cvsection{Education}
+\cventry{Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Republic of Korea}{Ph.D. in Aerospace Engineering}{Sep. 2021 -- Aug. 2025}
+\begin{itemize}
+\item Dissertation: \textit{``Data-Driven Fault Diagnosis and Fault-Tolerant Control for Redundancy of eVTOL Systems''}
+\item {\color{accent}\textbf{Outstanding Ph.D. Dissertation Award, KAIST College of Engineering (Feb. 2026)}}
+\item Advisor: Prof. Hyochoong Bang, Flight Dynamics, Guidance and Control Laboratory \quad GPA: 3.88 / 4.3
+\end{itemize}
+\cventry{Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, Republic of Korea}{M.S. in Aerospace Engineering}{Sep. 2019 -- Aug. 2021}
+\begin{itemize}
+\item Thesis: \textit{``Model Reference Adaptive Control Design for Quadrotor UAV Transporting Unknown Payloads''}
+\item Advisor: Prof. Hyochoong Bang \quad GPA: 3.91 / 4.3
+\end{itemize}
+\cventry{Ulsan National Institute of Science and Technology (UNIST)}{Ulsan, Republic of Korea}{B.S. in Mechanical and Aerospace Engineering (Cum Laude)}{Mar. 2015 -- Aug. 2019}
+\begin{itemize}
+\item Thesis: \textit{``Design of Hybrid Propulsion Multirotor System''} \quad Research advisor: Prof. Hungsun Son \quad GPA: 3.62 / 4.3
+\end{itemize}
+
+\cvsection{Professional Experience}
+\cventry{AITA InnoCORE Program, Department of Aerospace Engineering, KAIST}{Daejeon, Republic of Korea}{Postdoctoral Researcher}{Sep. 2025 -- Present}
+\begin{itemize}
+\item AI-based fault-tolerant control and quantum-magnetometer-aided navigation for eVTOL and unmanned aerial systems (advisor: Prof. Hyochoong Bang).
+\item Mentoring graduate and undergraduate students; flight-test campaigns with VN-200 INS, ZED-F9P RTK-GPS, and magnetometer payloads.
+\end{itemize}
+\cventry{AI Research Center, Hanyoung Nux Co., Ltd.}{Republic of Korea}{AI Research Engineer (concurrent with graduate studies)}{Apr. 2021 -- Feb. 2024}
+\begin{itemize}
+\item Industrial temperature-controller algorithms combining PID tuning with data-driven adaptation; productized control modules.
+\end{itemize}
+
+\cvsection{Honors \& Awards}
+\cvsub{Dissertation \& Academic Honors}
+\begin{tabularx}{\linewidth}{@{}p{1.2cm} X@{}}
+2026 & Outstanding Ph.D. Dissertation Award, KAIST College of Engineering \\
+2024 & Grand Paper Award, Institute of Control, Robotics and Systems (ICROS) \\
+\end{tabularx}
+\cvsub{Entrepreneurship}
+\begin{tabularx}{\linewidth}{@{}p{1.2cm} X@{}}
+2024 & Top Excellence Award, Defense-Technology-Based Startup Competition, Defense Acquisition Program Administration (DAPA) \\
+2024 & Excellence Prize (team), Challenge! K-Startup Grand Finale, Ministry of SMEs and Startups \\
+\end{tabularx}
+\cvsub{Best Paper Awards}
+\begin{tabularx}{\linewidth}{@{}p{1.2cm} X@{}}
+2025 & Best Paper Award, Korea Institute of Military Science and Technology (KIMST) \\
+2025 & Best Paper Award, Society for Aerospace System Engineering (SASE) \\
+2024 & Best Paper Award, Institute of Control, Robotics and Systems (ICROS) \\
+2024 & Best Paper Award ($\times$2), Society for Aerospace System Engineering (SASE) \\
+2024 & Best Paper Award, Korean Society for Aeronautical and Space Sciences (KSAS) \\
+2023 & Best Paper Award, 23rd International Conference on Control, Automation and Systems (ICCAS) \\
+2020 & Best Paper Award, Society for Aerospace System Engineering (SASE) \\
+\end{tabularx}
+\cvsub{Scholarships \& Distinctions}
+\begin{tabularx}{\linewidth}{@{}p{1.2cm} X@{}}
+2025 & Paan Foundation Academic Scholarship; Cho Jung-hoon Scholarship, KAIST; Moral Character Scholarship, KAIST \\
+2024 & Excellent Teaching Assistant Award, KAIST \\
+2019 & Cum Laude, UNIST \\
+\end{tabularx}
+
+\cvsection{Publications}
+\cvsub{International Journal Papers (SCI/SCIE, %%NJ%%)}
+{\small Full list including domestic journals and conference papers: \href{https://lee-jd.com/publications/}{lee-jd.com/publications}}
+\begin{pubs}
+%%JOURNALS%%
+\end{pubs}
+
+\cvsub{Patents (Applications)}
+\begin{pubs}
+\item Koopman-operator-based linear observer for multirotor motor fault diagnosis, KR 10-2024-0143755 (published 2025).
+\item Deep-Koopman-operator parity-space fault diagnosis for nonlinear systems, KR 10-2024-0146601 (published 2025).
+\item Flight-vehicle fault diagnosis via kernel linear independence test in RKHS, KR 10-2024-0171982 (published 2025).
+\item Triple-redundant flight control computer with an integrated voter, KR 10-2025-0026443 (published 2025).
+\end{pubs}
+
+\cvsection{Teaching \& Mentoring}
+\cventry{Department of Aerospace Engineering, KAIST}{Daejeon, Republic of Korea}{Teaching Assistant, Excellent TA Award (2024)}{2021 -- 2025}
+\begin{itemize}
+\item AE30000 Flight Dynamics Project; AE350 Aerospace Control Engineering; AE552 Advanced Linear Stability and Control; AE40005 Spacecraft Systems
+\end{itemize}
+\cventry{KAIST Department of Aerospace Engineering / Hanwha Aerospace}{Daejeon, Republic of Korea}{Graduate Mentor, Hanwha--KAIST Space Pebble Program}{2022 -- 2025}
+\begin{itemize}
+\item Mentored middle-school teams through aerospace mission projects across all four cohorts.
+\end{itemize}
+\cventry{Center for Research Officers for National Defense, KAIST}{Daejeon, Republic of Korea}{Research Mentor, MiliTech Challenge}{2021 -- 2024}
+\begin{itemize}
+\item Mentored team won the Grand Prize (Minister of National Defense Award) at the 5th MiliTech Challenge (2024); another team received an Encouragement Prize at the 2024 Korea Air Force Academy Future Aerospace Conference.
+\end{itemize}
+
+\cvsection{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}p{3.4cm} X@{}}
+\textbf{Programming} & C/C++, Python, MATLAB/Simulink \\
+\textbf{ML / control} & PyTorch, TensorFlow, scikit-learn, CVXPY, CasADi, GPyTorch, PySINDy \\
+\textbf{Flight / embedded} & PX4, ArduPilot, LattePanda, NVIDIA Jetson, STM32, Red Pitaya (FPGA-DSP), FCC design (OrCAD), HILS/PILS \\
+\textbf{Navigation / sensors} & VectorNav VN-200, u-blox ZED-F9P RTK, optically pumped magnetometer \\
+\textbf{Design / simulation} & CATIA, SolidWorks, Gazebo, AirSim, X-Plane \\
+\end{tabularx}
+
+\cvsection{References}
+\begin{tabularx}{\linewidth}{@{}X X X@{}}
+\textbf{Prof. Hyochoong Bang} & \textbf{Prof. Seung-Keun Kim} & \textbf{Prof. Sungtae Moon} \\
+{\small Dept. of Aerospace Engineering, KAIST} & {\small Dept. of Aerospace Engineering, Chungnam National University} & {\small Dept. of Intelligent Robotics, Chungbuk National University} \\
+{\small hcbang@kaist.ac.kr} & {\small skim78@cnu.ac.kr} & {\small stmoon@cbnu.ac.kr} \\
+{\small\itshape Ph.D. \& M.S. advisor} & {\small\itshape Research collaborator} & {\small\itshape Research collaborator} \\
+\end{tabularx}
+
+\end{document}

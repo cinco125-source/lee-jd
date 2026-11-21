@@ -16,6 +16,7 @@ on:
       - "**.yml"
       - "Gemfile"
       - "Gemfile.lock"
+      - "_scripts/**"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -44,6 +45,7 @@ on:
       - "**.yml"
       - "Gemfile"
       - "Gemfile.lock"
+      - "_scripts/**"
       - "!.github/workflows/axe.yml"
       - "!.github/workflows/broken-links.yml"
       - "!.github/workflows/deploy-docker-tag.yml"
@@ -86,6 +88,19 @@ jobs:
           cache: "npm"
       - name: Install JS deps 📦
         run: npm ci
+      # CV PDF is generated from _bibliography/papers.bib on every deploy, so it never goes stale.
+      - name: Generate CV source 📄
+        run: python3 _scripts/cv/make_cv.py
+      - name: Compile CV 📄
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: _scripts/cv
+          latexmk_use_xelatex: true
+      - name: Publish CV PDF 📄
+        run: |
+          cp _scripts/cv/cv.pdf assets/pdf/cv.pdf
+          cp _scripts/cv/cv.pdf assets/pdf/Jayden_Dongwoo_Lee_CV.pdf
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:

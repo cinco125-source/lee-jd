@@ -9,12 +9,13 @@ nav_order: 4
 
 <!-- _pages/publications.md -->
 {% include lee_style.liquid %}
+{% include pub_counts.liquid %}
 
 <div class="pub-jump">
-  <a href="#intl-journals" data-tab="intl-journals">International Journals <span>24</span></a>
-  <a href="#dom-journals" data-tab="dom-journals">Domestic Journals <span>6</span></a>
-  <a href="#intl-conferences" data-tab="intl-conferences">International Conferences <span>30</span></a>
-  <a href="#dom-conferences" data-tab="dom-conferences">Domestic Conferences <span>57</span></a>
+  <a href="#intl-journals" data-tab="intl-journals">International Journals <span>{{ pc_nj }}</span></a>
+  <a href="#dom-journals" data-tab="dom-journals">Domestic Journals <span>{{ pc_ndj }}</span></a>
+  <a href="#intl-conferences" data-tab="intl-conferences">International Conferences <span>{{ pc_nc }}</span></a>
+  <a href="#dom-conferences" data-tab="dom-conferences">Domestic Conferences <span>{{ pc_ndc }}</span></a>
 </div>
 
 
@@ -22,28 +23,28 @@ nav_order: 4
 
 <div class="pub-tab" id="intl-journals">
 <h2 class="bibliography-section-title">International Journals</h2>
-<div class="num-list" style="counter-reset: pubnum 25;" data-prefix="J">
+<div class="num-list" style="counter-reset: pubnum {{ pc_nj | plus: 1 }};" data-prefix="J">
 {% bibliography --query @article[scope=international] %}
 </div>
 </div>
 
 <div class="pub-tab" id="dom-journals">
 <h2 class="bibliography-section-title">Domestic Journals</h2>
-<div class="num-list" style="counter-reset: pubnum 7;" data-prefix="DJ">
+<div class="num-list" style="counter-reset: pubnum {{ pc_ndj | plus: 1 }};" data-prefix="DJ">
 {% bibliography --query @article[scope=domestic] %}
 </div>
 </div>
 
 <div class="pub-tab" id="intl-conferences">
 <h2 class="bibliography-section-title">International Conferences</h2>
-<div class="num-list" style="counter-reset: pubnum 31;" data-prefix="C">
+<div class="num-list" style="counter-reset: pubnum {{ pc_nc | plus: 1 }};" data-prefix="C">
 {% bibliography --query @inproceedings[scope=international] %}
 </div>
 </div>
 
 <div class="pub-tab" id="dom-conferences">
 <h2 class="bibliography-section-title">Domestic Conferences</h2>
-<div class="num-list" style="counter-reset: pubnum 58;" data-prefix="DC">
+<div class="num-list" style="counter-reset: pubnum {{ pc_ndc | plus: 1 }};" data-prefix="DC">
 {% bibliography --query @inproceedings[scope=domestic] %}
 </div>
 </div>
